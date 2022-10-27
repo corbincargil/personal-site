@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
-  background-color: #7474f9;
+  color: white;
   font-size: 1.4rem;
   ul {
     list-style: none;
