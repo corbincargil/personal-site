@@ -9,4 +9,5 @@ export const StyledNavbar = styled.div`
     justify-content: flex-start;
     gap: 1.5rem;
   }
+  z-index: 3;
 `;

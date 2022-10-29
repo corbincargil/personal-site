@@ -1,28 +1,19 @@
 import * as React from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
+import GlobalStyles from "../components/styles/Global";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import GlobalStyles from "../components/styles/Global";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import hero from "../images/hero.jpg";
+import Projects from "../components/Projects";
 
 const IndexPage = () => {
   return (
     <main>
-      <GlobalStyles />
-      <Parallax
-        pages={2}
-        style={{
-          backgroundImage: `url(${hero})`,
-        }}
-      >
-        <ParallaxLayer speed={1}>
-          <Hero />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={0.9999} speed={2} factor={1}>
-          <About />
-        </ParallaxLayer>
-      </Parallax>
+      <ParallaxProvider>
+        <GlobalStyles />
+        <Hero />
+        <About />
+        <Projects />
+      </ParallaxProvider>
     </main>
   );
 };

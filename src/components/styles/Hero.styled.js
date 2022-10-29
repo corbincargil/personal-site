@@ -1,16 +1,28 @@
 import styled from "styled-components";
+import hero from "../../images/hero.jpg";
 
 export const StyledHero = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
+  #hero-bg {
+    margin-top: -250px;
+    position: absolute;
+    background-image: url(${hero});
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  p {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+  }
 `;
 
 export const Logo = styled.div`
   background-color: #ffffff3e;
-  width: 100%;
-  position: absolute;
-  top: 40%;
+  margin-top: 300px;
   display: flex;
   justify-content: flex-end;
   img {
