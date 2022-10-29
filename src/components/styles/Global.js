@@ -4,7 +4,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         padding: 0px;
         margin: 0px;
-        font-family: "Open Sans", "Gothic A1", sans-serif;
+        font-family: "Gothic A1", "Open Sans", sans-serif;
     }
 `;
 

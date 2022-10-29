@@ -1,20 +1,47 @@
 import React from "react";
+import { useRef } from "react";
 import { StyledAbout } from "./styles/About.styled";
 import portrait from "../images/portrait.jpg";
 import { Parallax } from "react-scroll-parallax";
+import { useScroll, useInView } from "framer-motion";
 
 export default function About() {
+  const { scrollYProgess } = useScroll();
+  const titleRef = useRef(null);
+  const titleIsInView = useInView(titleRef, { once: true });
+  const contentRef = useRef(null);
+  const contentIsInView = useInView(contentRef, { once: true });
   return (
     <StyledAbout>
       <Parallax
         easing={"easeInOutCirc"}
-        translateX={[1300, 100]}
+        translateX={[700, 50]}
         translateY={[0, 0]}
+        startScroll={200}
       >
         <h1 id="about-title">About</h1>
       </Parallax>
+      {/* <h1
+        id="about-title"
+        ref={titleRef}
+        style={{
+          transform: titleIsInView ? "none" : "translateX(200px)",
+          opacity: titleIsInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
+        About
+      </h1> */}
 
-      <div id="about-content">
+      <div
+        id="about-content"
+        ref={contentRef}
+        style={{
+          transform: contentIsInView ? "none" : "translateY(200px)",
+          opacity: contentIsInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <img src={portrait} alt="Portrait" />
         <p>
           Hi, I’m Corbin. I am a self-taught software developer born & raised in

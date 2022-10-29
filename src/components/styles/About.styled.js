@@ -11,18 +11,24 @@ export const StyledAbout = styled.div`
   height: 80vh;
 
   #about-title {
+    font-size: 3rem;
+    /* margin-left: 150px; */
   }
 
   #about-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   p {
     width: 40%;
+    font-size: 1.2rem;
+    line-height: 30px;
   }
   img {
-    width: 25%;
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
   }
   z-index: 40;
 `;

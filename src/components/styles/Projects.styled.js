@@ -5,9 +5,11 @@ export const StyledProjects = styled.div`
   top: 100vh;
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: 100vh;
-  h1 {
+
+  #projects-title {
+    font-size: 3rem;
+    width: 100px;
   }
 
   #projects-content {
