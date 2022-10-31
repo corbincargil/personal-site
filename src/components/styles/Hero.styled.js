@@ -6,7 +6,7 @@ export const StyledHero = styled.div`
   flex-direction: column;
   height: 100vh;
   #hero-bg {
-    margin-top: -250px;
+    margin-top: -235px;
     position: absolute;
     background-image: url(${hero});
     background-size: cover;
