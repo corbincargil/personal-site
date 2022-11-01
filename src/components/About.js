@@ -19,7 +19,9 @@ export default function About() {
         translateY={[0, 0]}
         startScroll={200}
       >
-        <h1 id="about-title">About</h1>
+        <h1 className="section-title" id="about-title">
+          About
+        </h1>
       </Parallax>
       {/* <h1
         id="about-title"

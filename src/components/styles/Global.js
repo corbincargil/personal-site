@@ -6,6 +6,10 @@ const GlobalStyles = createGlobalStyle`
         margin: 0px;
         font-family: "Gothic A1", "Open Sans", sans-serif;
     }
+
+    .section-title {
+        color: orange;
+    }
 `;
 
 export default GlobalStyles;

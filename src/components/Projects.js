@@ -19,7 +19,9 @@ export default function Projects() {
         // endScroll={700}
         style={{ width: "100px" }}
       >
-        <h1 id="projects-title">Projects</h1>
+        <h1 className="section-title" id="projects-title">
+          Projects
+        </h1>
       </Parallax>
       <div
         id="project-content"
@@ -30,9 +32,7 @@ export default function Projects() {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <strong>
-          <h2>Featured</h2>
-        </strong>
+        <strong>{/* <h2>Featured</h2> */}</strong>
         <FeaturedProjects />
       </div>
       <p>

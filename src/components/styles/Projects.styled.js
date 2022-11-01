@@ -9,7 +9,7 @@ export const StyledProjects = styled.div`
   height: 100vh;
 
   #projects-title {
-    margin: 20px 0px;
+    margin: 60px 0px;
     font-size: 3rem;
     width: 100px;
   }
@@ -32,15 +32,17 @@ export const StyledFeaturedProjectsDisplay = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  #main-content h3 {
+
+  #project-name {
+    margin: 0px 0px 10px 0px;
     align-self: left;
-    margin-left: 64px;
-    width: 400px;
-    font-size: 1.5rem;
+    /* margin-left: 64px;
+    width: 400px; */
+    font-size: 2rem;
   }
   #main-content {
     padding: 0 0 0 20px;
-    width: 65%;
+    width: 55%;
     display: flex;
     flex-direction: column;
   }
@@ -72,13 +74,13 @@ export const StyledFeaturedProjectsDisplay = styled.div`
   }
 
   #secondary-content {
-    margin: 0px 10px;
-    width: 35%;
+    margin: 0px 20px;
+    width: 45%;
     display: flex;
     flex-direction: column;
   }
 
-  #secondary-content h3 {
+  #description-heading {
     font-size: 1.3rem;
     margin-bottom: 24px;
   }
@@ -109,5 +111,8 @@ export const StyledFeaturedProjectsDisplay = styled.div`
 
   #description-container {
     width: 100%;
+    font-size: 0.9rem;
+    line-height: 25px;
+    padding: 5px;
   }
 `;

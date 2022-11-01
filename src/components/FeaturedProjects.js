@@ -63,7 +63,7 @@ export default function FeaturedProjectsDisplay() {
         initial="hidden"
         animate="visible"
       >
-        <motion.h3 variants={item}>{project.name}</motion.h3>
+        {/* <motion.h3 variants={item}>{project.name}</motion.h3> */}
         <motion.div variants={item} id="preview-container">
           <motion.img
             src={left}
@@ -106,10 +106,11 @@ export default function FeaturedProjectsDisplay() {
         </motion.div>
       </motion.div>
       <div id="secondary-content">
+        <motion.h3 id="project-name" variants={item}>
+          {project.name}
+        </motion.h3>
         <div id="description-container">
-          <strong>
-            <h3>Description:</h3>
-          </strong>
+          <h3 id="description-heading">Description:</h3>
 
           <p>{project.description}</p>
         </div>
