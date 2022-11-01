@@ -39,10 +39,15 @@ export const StyledSkills = styled.div`
     transition: 0.5s;
   }
   .skill-list:hover {
-    scale: 1.1;
-    border: 1px solid black;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    transition: 0.8s;
+    scale: 0.95;
+    /* border: 1px solid black; */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    transition: 0.5s;
   }
   .skill {
     margin: 8px 0px;

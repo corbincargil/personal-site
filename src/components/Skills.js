@@ -1,7 +1,9 @@
 import React from "react";
 import { StyledSkills } from "./styles/Skills.styled";
 import { Parallax } from "react-scroll-parallax";
+import SkillIcon from "./SkillIcon";
 
+//skill icons
 import reactIcon from "../images/skill-icons/icons8-react-native-48.png";
 import htmlIcon from "../images/skill-icons/icons8-html-5-48.png";
 import cssIcon from "../images/skill-icons/icons8-css3-48.png";
@@ -14,7 +16,9 @@ import webpackIcon from "../images/skill-icons/icons8-webpack-48.png";
 import jestIcon from "../images/skill-icons/jest.png";
 import figmaIcon from "../images/skill-icons/icons8-figma-48.png";
 import nodeIcon from "../images/skill-icons/icons8-nodejs-48.png";
-import SkillIcon from "./SkillIcon";
+import styledComponentsIcon from "../images/skill-icons/styled-components-icon.png";
+import expressIcon from "../images/skill-icons/icons8-express-js-48.png";
+import mongoDBIcon from "../images/skill-icons/icons8-mongodb-48.png";
 
 export default function Skills() {
   return (
@@ -166,9 +170,27 @@ let skills = [
     id: 11,
   },
   {
+    name: "Styled Components",
+    icon: styledComponentsIcon,
+    category: "front-end",
+    id: 12,
+  },
+  {
     name: "Node.js",
     icon: nodeIcon,
     category: "current-learning",
-    id: 12,
+    id: 13,
+  },
+  {
+    name: "Express",
+    icon: expressIcon,
+    category: "current-learning",
+    id: 14,
+  },
+  {
+    name: "Mongo DB",
+    icon: mongoDBIcon,
+    category: "current-learning",
+    id: 15,
   },
 ];
