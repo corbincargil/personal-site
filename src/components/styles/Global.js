@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
     .section-title {
         color: orange;
+        font-size: 3rem;
     }
 `;
 

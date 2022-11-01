@@ -14,10 +14,12 @@ export default function About() {
   return (
     <StyledAbout>
       <Parallax
-        easing={"easeInOutCirc"}
-        translateX={[700, 50]}
+        easing={"easeInOutQuad"}
+        translateX={[0, 900]}
         translateY={[0, 0]}
-        startScroll={200}
+        startScroll={300}
+        // endScroll={700}
+        style={{ width: "100px" }}
       >
         <h1 className="section-title" id="about-title">
           About

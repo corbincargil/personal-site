@@ -4,6 +4,7 @@ import GlobalStyles from "../components/styles/Global";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
         <Hero />
         <About />
         <Projects />
+        <Skills />
       </ParallaxProvider>
     </main>
   );
