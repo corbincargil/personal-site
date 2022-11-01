@@ -42,7 +42,7 @@ export default function Skills() {
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "front-end") {
-                  return <SkillIcon skill={skill} />;
+                  return <SkillIcon key={skill.id} skill={skill} />;
                 }
               })}
             </ul>
@@ -52,7 +52,7 @@ export default function Skills() {
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "back-end") {
-                  return <SkillIcon skill={skill} />;
+                  return <SkillIcon key={skill.id} skill={skill} />;
                 }
               })}
             </ul>
@@ -62,7 +62,7 @@ export default function Skills() {
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "design") {
-                  return <SkillIcon skill={skill} />;
+                  return <SkillIcon key={skill.id} skill={skill} />;
                 }
               })}
             </ul>
@@ -72,7 +72,7 @@ export default function Skills() {
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "industry-tools") {
-                  return <SkillIcon skill={skill} />;
+                  return <SkillIcon key={skill.id} skill={skill} />;
                 }
               })}
             </ul>
@@ -84,7 +84,7 @@ export default function Skills() {
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "current-learning") {
-                  return <SkillIcon skill={skill} />;
+                  return <SkillIcon key={skill.id} skill={skill} />;
                 }
               })}
             </ul>
