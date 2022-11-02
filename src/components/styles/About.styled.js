@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
 export const StyledAbout = styled.div`
-  position: absolute;
-  padding-top: 50px;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background-color: white;
-  height: 80vh;
+  height: 100vh;
 
   #about-title {
     font-size: 3rem;
@@ -31,5 +29,4 @@ export const StyledAbout = styled.div`
     height: auto;
     border-radius: 20px;
   }
-  z-index: 40;
 `;

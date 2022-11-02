@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const StyledSkills = styled.div`
+  margin-top: 2rem;
   padding: 1.5rem;
-  position: relative;
-  top: 100vh;
   height: 100vh;
 
   #skills-container {
