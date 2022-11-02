@@ -15,10 +15,13 @@ export default function Contact() {
           to shoot me an email or you can find me via the links below!
         </p>
         <div id="icon-container">
-          <a href="https://www.linkedin.com/in/corbin-cargil-65b4271b5">
+          <a
+            href="https://www.linkedin.com/in/corbin-cargil-65b4271b5"
+            target="_blank"
+          >
             <img src={linkedInIcon} alt="" />
           </a>
-          <a href="https://github.com/corbincargil">
+          <a href="https://github.com/corbincargil" target="_blank">
             <img src={githubIcon} alt="" />
           </a>
         </div>
