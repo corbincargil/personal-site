@@ -8,16 +8,20 @@ export const StyledProjects = styled.div`
   height: 100vh;
 
   #projects-title {
-    margin: 60px 0px;
+    margin: 30px 0px;
     font-size: 3rem;
     width: 100px;
   }
 
   #project-content {
+    margin: 20px 0px;
+    padding: 75px 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
   }
 
   #project-content h2 {

@@ -15,7 +15,7 @@ export default function About() {
     <StyledAbout>
       <Parallax
         easing={"easeInOutQuad"}
-        translateX={[0, 900]}
+        translateX={[-300, 600]}
         translateY={[0, 0]}
         startScroll={300}
         // endScroll={700}

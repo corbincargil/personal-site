@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
 export const StyledAbout = styled.div`
-  margin: 0;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  background-color: white;
-  height: 100vh;
+  align-items: center;
+  height: 90vh;
 
   #about-title {
     font-size: 3rem;
-    /* margin-left: 150px; */
   }
 
   #about-content {
+    padding: 40px 40px 80px;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
+    border-bottom: solid 1px black;
   }
 
   p {

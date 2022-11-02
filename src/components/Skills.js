@@ -25,10 +25,9 @@ export default function Skills() {
     <StyledSkills>
       <Parallax
         easing={"easeInOutQuad"}
-        translateX={[0, 900]}
+        translateX={[0, 1400]}
         translateY={[0, 0]}
         startScroll={300}
-        // endScroll={700}
         style={{ width: "100px" }}
       >
         <h1 className="section-title" id="skills-title">
@@ -47,6 +46,7 @@ export default function Skills() {
               })}
             </ul>
           </div>
+          <div className="line"></div>
           <div className="skill-list" id="back-end">
             <h2>Back End:</h2>
             <ul>
@@ -77,6 +77,7 @@ export default function Skills() {
               })}
             </ul>
           </div>
+          <div className="line"></div>
         </div>
         <div className="learning">
           <div className="skill-list" id="current-learning">

@@ -15,8 +15,8 @@ const IndexPage = () => {
         <GlobalStyles />
         <Hero />
         <About />
-        <Projects />
         <Skills />
+        <Projects />
         <Footer />
         <Contact />
       </ParallaxProvider>

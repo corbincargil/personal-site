@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const StyledSkills = styled.div`
+  background-color: #06074a;
+  color: #06074a;
   margin-top: 2rem;
   padding: 1.5rem;
-  height: 100vh;
+  height: 90vh;
 
   #skills-container {
     margin: auto;
@@ -14,16 +16,24 @@ export const StyledSkills = styled.div`
     width: 90%;
   }
   .learned {
+    padding-bottom: 40px;
     width: 100%;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
+    border-bottom: 1px solid white;
   }
   .learned :first-child,
-  .learned :last-child {
+  .learned :nth-child(5) {
     grid-row-start: 1;
     grid-row-end: span 2;
+  }
+  .line {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    border-left: 1px solid white;
+    height: 80%;
   }
 
   .learning {
@@ -33,8 +43,9 @@ export const StyledSkills = styled.div`
   .skill-list {
     list-style: none;
     padding: 16px;
-    /* border: 2px solid black; */
-    /* border-radius: 10px; */
+    background-color: #e6af48;
+    border: 2px solid black;
+    border-radius: 10px;
     transition: 0.5s;
   }
   .skill-list:hover {
@@ -44,8 +55,8 @@ export const StyledSkills = styled.div`
     /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
       rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset,
+      rgba(18, 18, 18, 0.5) -3px -3px 6px 1px inset;
     transition: 0.5s;
   }
   .skill {
