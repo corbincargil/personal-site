@@ -94,7 +94,7 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     gap: 8px;
   }
   #repo-link img {
-    width: 40px;
+    width: 30px;
   }
   #repo-link a,
   #repo-link a:visited {
