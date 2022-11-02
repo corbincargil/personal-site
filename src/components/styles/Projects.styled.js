@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const StyledProjects = styled.div`
-  position: relative;
-  margin-top: 100px;
-  top: 100vh;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   height: 100vh;
 
   #projects-title {
@@ -25,7 +24,6 @@ export const StyledProjects = styled.div`
     margin: 0;
     text-decoration: underline;
   }
-  z-index: 50;
 `;
 
 export const StyledFeaturedProjectsDisplay = styled.div`

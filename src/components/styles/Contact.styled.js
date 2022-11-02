@@ -12,8 +12,6 @@ const containerBorder = "1px solid black";
 const containerBorderRadius = "10px";
 
 export const StyledContact = styled.div`
-  position: relative;
-  top: 100vh;
   height: 80vh;
   background-image: url(${hero});
   background-attachment: fixed;
