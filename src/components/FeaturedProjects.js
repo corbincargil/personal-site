@@ -7,6 +7,7 @@ import waldo from "../images/waldo.png";
 import etchASketch from "../images/etch-a-sketch.png";
 import left from "../images/left.png";
 import right from "../images/right.png";
+import githubIcon from "../images/github-60.png";
 
 export default function FeaturedProjectsDisplay() {
   const contentRef = useRef(null);
@@ -88,7 +89,7 @@ export default function FeaturedProjectsDisplay() {
               delay: 1,
             }}
           >
-            <a id="live-link" href={project.liveLink}>
+            <a id="live-link" href={project.liveLink} target="_blank">
               <img
                 src={project.image}
                 className="project-image"
@@ -106,9 +107,17 @@ export default function FeaturedProjectsDisplay() {
         </motion.div>
       </motion.div>
       <div id="secondary-content">
-        <motion.h3 id="project-name" variants={item}>
-          {project.name}
-        </motion.h3>
+        <div id="secondary-title-container">
+          <motion.h3 id="project-name" variants={item}>
+            {project.name}
+          </motion.h3>
+          <div id="repo-link">
+            <img src={githubIcon} alt="Github logo" />
+            <a href={project.repoLink} target="_blank">
+              <span>Source</span>
+            </a>
+          </div>
+        </div>
         <div id="description-container">
           <h3 id="description-heading">Description:</h3>
 
@@ -135,7 +144,7 @@ const featuredProjects = [
     name: "Where's Waldo",
     image: waldo,
     tags: ["Firebase", "React", "State management", "Firestore"],
-    liveLink: "corbincargil.github.io/waldo/",
+    liveLink: "https://corbincargil.github.io/waldo/",
     repoLink: "https://github.com/corbincargil/waldo",
     description:
       "This photo-tagging app is based on the game Where's Waldo. It was buit using React for the front end and Firebase for the back end. Users can start by selecting an image to play, then search for and select each of the characters for that image. A timer will start once the game begins to track the user's score.",
@@ -145,7 +154,7 @@ const featuredProjects = [
     name: "Shopping Cart",
     image: shoppingCart,
     tags: ["React", "State management", "ES6", "Hooks"],
-    liveLink: "corbincargil.github.io/shopping-cart/",
+    liveLink: "https://corbincargil.github.io/shopping-cart/",
     repoLink: "https://github.com/corbincargil/shopping-cart",
     description:
       "This is a mock online shopping website based on skatewarehouse.com that was built using React. Users can navigate the website, shop for different products based on brand or product type, add items to the cart, and 'checkout' to submit their order. The primary goals of this project were to 1) practice using React Router to navigate to different pages on the site and 2) practice using hooks to manipulate state accross components (for example, allowing a user to add a product to their cart from the Shop page and have the added product and all its info appear on the Cart page).",
@@ -155,7 +164,7 @@ const featuredProjects = [
     name: "Etch-a-Sketch",
     image: etchASketch,
     tags: ["DOM-manipulation", "ES6", "HTML & CSS"],
-    liveLink: "corbincargil.github.io/etch-a-sketch/",
+    liveLink: "https://corbincargil.github.io/etch-a-sketch/",
     repoLink: "https://github.com/corbincargil/etch-a-sketch",
     description:
       "This etch-a-sketch project is a simple sketching interface that allows the user to make pixel art by clicking and dragging their mouse through the grid. The grid can be reset and the number of rows & columns on the grid adjusted as well. The primary goal of this project was to practice using advanced DOM manipulation to make an interactive web page.",

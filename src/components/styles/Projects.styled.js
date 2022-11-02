@@ -36,8 +36,6 @@ export const StyledFeaturedProjectsDisplay = styled.div`
   #project-name {
     margin: 0px 0px 10px 0px;
     align-self: left;
-    /* margin-left: 64px;
-    width: 400px; */
     font-size: 2rem;
   }
   #main-content {
@@ -53,7 +51,6 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     align-items: center;
   }
   img.project-image {
-    /* background-color: #c7c7c7; */
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -80,10 +77,36 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     flex-direction: column;
   }
 
+  #secondary-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
   #description-heading {
     font-size: 1.3rem;
     margin-bottom: 24px;
   }
+  #repo-link {
+    margin: 0 3rem 0 0;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  #repo-link img {
+    width: 40px;
+  }
+  #repo-link a,
+  #repo-link a:visited {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s;
+  }
+  #repo-link a:hover {
+    color: orange;
+    transition: 0.2s;
+  }
+
   ul {
     padding: 0px;
     padding: 0px;
