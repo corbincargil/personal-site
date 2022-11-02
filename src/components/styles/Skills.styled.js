@@ -22,7 +22,7 @@ export const StyledSkills = styled.div`
     gap: 1rem;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #e6af48;
   }
   .learned :first-child,
   .learned :nth-child(5) {
@@ -32,7 +32,7 @@ export const StyledSkills = styled.div`
   .line {
     grid-row-start: 1;
     grid-row-end: span 2;
-    border-left: 1px solid white;
+    border-left: 1px solid #e6af48;
     height: 80%;
   }
 
@@ -47,6 +47,7 @@ export const StyledSkills = styled.div`
     border: 2px solid black;
     border-radius: 10px;
     transition: 0.5s;
+    width: 75%;
   }
   .skill-list:hover {
     scale: 0.95;
@@ -58,6 +59,10 @@ export const StyledSkills = styled.div`
     box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset,
       rgba(18, 18, 18, 0.5) -3px -3px 6px 1px inset;
     transition: 0.5s;
+  }
+  .skill-list ul {
+    margin: 0;
+    padding: 0;
   }
   .skill {
     margin: 8px 0px;

@@ -37,7 +37,7 @@ export default function Skills() {
       <div id="skills-container">
         <div className="learned">
           <div className="skill-list" id="front-end">
-            <h2>Front End:</h2>
+            <h2>Front End</h2>
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "front-end") {
@@ -48,7 +48,7 @@ export default function Skills() {
           </div>
           <div className="line"></div>
           <div className="skill-list" id="back-end">
-            <h2>Back End:</h2>
+            <h2>Back End</h2>
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "back-end") {
@@ -58,7 +58,7 @@ export default function Skills() {
             </ul>
           </div>
           <div className="skill-list" id="design">
-            <h2>Design:</h2>
+            <h2>Design</h2>
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "design") {
@@ -68,7 +68,7 @@ export default function Skills() {
             </ul>
           </div>
           <div className="skill-list" id="industry-tools">
-            <h2>Industry Tools:</h2>
+            <h2>Industry Tools</h2>
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "industry-tools") {
@@ -81,7 +81,7 @@ export default function Skills() {
         </div>
         <div className="learning">
           <div className="skill-list" id="current-learning">
-            <h2>Current Learning:</h2>
+            <h2>Current Learning</h2>
             <ul>
               {skills.map((skill) => {
                 if (skill.category === "current-learning") {
