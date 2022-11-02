@@ -28,7 +28,7 @@ export const StyledSkills = styled.div`
   }
 
   .learning {
-    width: 75%;
+    width: 25%;
   }
 
   .skill-list {
@@ -55,7 +55,12 @@ export const StyledSkills = styled.div`
     display: flex;
     align-items: center;
     gap: 12px;
+    transition: 0.2s;
   }
+  /* .skill:hover {
+    scale: 1.2;
+    transition: 0.5s;
+  } */
   .skill img {
     width: 36px;
   }
