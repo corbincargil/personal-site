@@ -3,7 +3,7 @@ import hero from "../../images/hero.jpg";
 
 const containerWidth = "30%";
 const containerHeight = "450px";
-const containerMargin = "10px";
+const containerMargin = "30px 10px";
 const containerPadding = "25px";
 const containerBgColor = "#c2c2c2ae";
 const containerTextColor = "black";
@@ -24,7 +24,7 @@ export const StyledContact = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 
   #connect {
     margin: ${containerMargin};
