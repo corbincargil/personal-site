@@ -12,7 +12,7 @@ export default function About() {
   const contentRef = useRef(null);
   const contentIsInView = useInView(contentRef, { once: true });
   return (
-    <StyledAbout>
+    <StyledAbout id="about">
       <Parallax
         easing={"easeInOutQuad"}
         translateX={[-300, 600]}

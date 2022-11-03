@@ -10,7 +10,7 @@ export default function Projects() {
   const contentIsInView = useInView(contentRef, { once: true });
 
   return (
-    <StyledProjects>
+    <StyledProjects id="projects">
       <Parallax
         easing={"easeInOutQuad"}
         translateX={[0, 900]}

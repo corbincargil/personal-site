@@ -22,7 +22,7 @@ import mongoDBIcon from "../images/skill-icons/icons8-mongodb-48.png";
 
 export default function Skills() {
   return (
-    <StyledSkills>
+    <StyledSkills id="skills">
       <Parallax
         easing={"easeInOutQuad"}
         translateX={[0, 1400]}
