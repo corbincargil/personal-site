@@ -14,16 +14,16 @@ export default function About() {
   return (
     <StyledAbout id="about">
       <Parallax
+        className="section-title"
+        id="about-title"
         easing={"easeInOutQuad"}
-        translateX={[-300, 600]}
+        translateX={[50, 600]}
         translateY={[0, 0]}
         startScroll={300}
         // endScroll={700}
         style={{ width: "100px" }}
       >
-        <h1 className="section-title" id="about-title">
-          About
-        </h1>
+        <h1>About</h1>
       </Parallax>
       {/* <h1
         id="about-title"
@@ -61,6 +61,11 @@ export default function About() {
           watching movies/TV, but try to not spend too much time inside if I can
           help it.
         </p>
+        {/* <p>
+          Old github bio: Hi, I'm Corbin and I am a mechanical engineering
+          graduate turned software engineer. I use Github to track my learning
+          process. Please have a look around!
+        </p> */}
       </div>
     </StyledAbout>
   );
