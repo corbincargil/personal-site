@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, startTransition } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import { StyledHero, Logo } from "./styles/Hero.styled";
 import Navbar from "./Navbar";
-import logo from "../images/corbin-logo-white-cropped.png";
 import { Parallax } from "react-scroll-parallax";
 
 import * as THREE from "three";
@@ -40,7 +40,10 @@ export default function Hero() {
         <Navbar />
         <Parallax speed={15}>
           <Logo id="banner">
-            <img src={logo} alt="Corbin Cargil logo" />
+            <StaticImage
+              src="../images/corbin-logo-white-cropped.png"
+              alt="Corbin Cargil logo"
+            />
           </Logo>
         </Parallax>
         <p>

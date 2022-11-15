@@ -1,14 +1,12 @@
 import React from "react";
 import { useRef } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 import { StyledAbout } from "./styles/About.styled";
 import portrait from "../images/portrait.jpg";
 import { Parallax } from "react-scroll-parallax";
-import { useScroll, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 
 export default function About() {
-  const { scrollYProgess } = useScroll();
-  const titleRef = useRef(null);
-  const titleIsInView = useInView(titleRef, { once: true });
   const contentRef = useRef(null);
   const contentIsInView = useInView(contentRef, { once: true });
   return (
@@ -23,18 +21,6 @@ export default function About() {
       >
         <h1>About</h1>
       </Parallax>
-      {/* <h1
-        id="about-title"
-        ref={titleRef}
-        style={{
-          transform: titleIsInView ? "none" : "translateX(200px)",
-          opacity: titleIsInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-      >
-        About
-      </h1> */}
-
       <div
         id="about-content"
         ref={contentRef}
