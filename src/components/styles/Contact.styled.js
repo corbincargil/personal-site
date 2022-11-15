@@ -12,7 +12,7 @@ const containerBorder = "1px solid black";
 const containerBorderRadius = "10px";
 
 export const StyledContact = styled.div`
-  height: 80vh;
+  min-height: 80vh;
   background-image: url(${hero});
   background-attachment: fixed;
   background-position: center;
@@ -55,6 +55,39 @@ export const StyledContact = styled.div`
   #icon-container img:active {
     scale: 0.9;
     transition: 0.3s;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    background-color: yellow;
+    #connect {
+      width: 35%;
+    }
+  }
+
+  @media screen and (max-width: 991.98px) {
+    background-color: green;
+    flex-direction: column;
+    align-items: center;
+    #connect {
+      width: 50%;
+    }
+    #connect h2 {
+      font-size: 1.8rem;
+    }
+    #connect p {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    background-color: blue;
+    #connect {
+      width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 575.98px) {
+    background-color: red;
   }
 `;
 
@@ -120,5 +153,24 @@ export const StyledForm = styled.form`
   }
   #submit:active {
     scale: 0.9;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    background-color: yellow;
+    width: 35%;
+  }
+
+  @media screen and (max-width: 991.98px) {
+    background-color: green;
+    width: 50%;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    background-color: blue;
+    width: 70%;
+  }
+
+  @media screen and (max-width: 575.98px) {
+    background-color: red;
   }
 `;
