@@ -22,7 +22,7 @@ export default function ContactForm() {
   }
 
   return (
-    <StyledForm method="POST" onSubmit={submitForm} id="contact netlify">
+    <StyledForm method="POST" onSubmit={submitForm} id="contact" netlify>
       <label htmlFor="name">Name:</label>
       <input
         type="text"
