@@ -25,10 +25,9 @@ export default function Skills() {
     <StyledSkills id="skills">
       <Parallax
         easing={"easeInOutQuad"}
-        translateX={[0, 1400]}
+        translateX={[800, 0]}
         translateY={[0, 0]}
-        startScroll={300}
-        style={{ width: "100px" }}
+        style={{ width: "min-content" }}
       >
         <h1 className="section-title" id="skills-title">
           Skills

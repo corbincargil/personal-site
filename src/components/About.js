@@ -17,11 +17,9 @@ export default function About() {
         className="section-title"
         id="about-title"
         easing={"easeInOutQuad"}
-        translateX={[50, 600]}
+        translateX={[800, 0]}
         translateY={[0, 0]}
-        startScroll={300}
-        // endScroll={700}
-        style={{ width: "100px" }}
+        style={{ width: "min-content" }}
       >
         <h1>About</h1>
       </Parallax>

@@ -7,16 +7,14 @@ import FeaturedProjects from "./FeaturedProjects";
 
 export default function Projects() {
   const contentRef = useRef(null);
-  const contentIsInView = useInView(contentRef, { once: true });
+  const contentIsInView = useInView(contentRef);
 
   return (
     <StyledProjects id="projects">
       <Parallax
         easing={"easeInOutQuad"}
-        translateX={[0, 900]}
+        translateX={[800, -100]}
         translateY={[0, 0]}
-        startScroll={300}
-        // endScroll={700}
         style={{ width: "100px" }}
       >
         <h1 className="section-title" id="projects-title">
