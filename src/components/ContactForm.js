@@ -18,11 +18,11 @@ export default function ContactForm() {
 
   function submitForm(e) {
     e.preventDefault();
-    alert(JSON.stringify(form, null, 2));
+    alert(`Thank you, ${form.name}! Your contact request has been submitted.`);
   }
 
   return (
-    <StyledForm onSubmit={submitForm} id="contact">
+    <StyledForm method="POST" onSubmit={submitForm} id="contact netlify">
       <label htmlFor="name">Name:</label>
       <input
         type="text"

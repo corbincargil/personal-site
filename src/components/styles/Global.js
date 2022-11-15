@@ -1,7 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-    body {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
         padding: 0px;
         margin: 0px;
         font-family: "Gothic A1", "Open Sans", sans-serif;
