@@ -47,7 +47,7 @@ export default function ContactForm() {
       // onSubmit={submitForm}
       method="post"
       name="contact"
-      data-netlify="true"
+      netlify
     >
       <label htmlFor="name">
         Name:
