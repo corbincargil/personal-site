@@ -13,7 +13,7 @@ export default function Projects() {
     <StyledProjects id="projects">
       <Parallax
         easing={"easeInOutQuad"}
-        translateX={[800, -100]}
+        translateX={[800, 0]}
         translateY={[0, 0]}
         style={{ width: "100px" }}
       >

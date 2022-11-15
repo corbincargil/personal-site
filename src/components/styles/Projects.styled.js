@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const StyledProjects = styled.div`
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
 
   #projects-title {
-    margin: 30px 0px;
+    margin: 10px 0px;
     font-size: 3rem;
     width: 100px;
   }
@@ -27,6 +27,12 @@ export const StyledProjects = styled.div`
   #project-content h2 {
     margin: 0;
     text-decoration: underline;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    #project-content {
+      padding: 12px;
+    }
   }
 `;
 
@@ -47,7 +53,7 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     flex-direction: column;
   }
   #preview-container {
-    width: clamp(500px, 1000px, 100%);
+    width: clamp(200px, 1000px, 100%);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -139,5 +145,50 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     font-size: 0.9rem;
     line-height: 25px;
     padding: 5px;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    background-color: red;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    #main-content,
+    #secondary-content {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 991.98px) {
+    background-color: green;
+    #main-content,
+    #secondary-content {
+      margin: 0;
+      padding: 0;
+    }
+    .button {
+      height: 48px;
+      width: 48px;
+    }
+    #project-name {
+      font-size: 1.5rem;
+    }
+    #description-heading {
+      margin: 8px 0px;
+      font-size: 1rem;
+    }
+    #repo-link img {
+      width: 24px;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    background-color: blue;
+  }
+
+  @media screen and (max-width: 575.98px) {
+    background-color: yellow;
+    .tag {
+      display: block;
+    }
   }
 `;
