@@ -5,7 +5,7 @@ export const StyledSkills = styled.div`
   color: #06074a;
   margin-top: 2rem;
   padding: 1.5rem;
-  height: 90vh;
+  min-height: 90vh;
 
   #skills-container {
     margin: auto;
@@ -51,11 +51,6 @@ export const StyledSkills = styled.div`
   }
   .skill-list:hover {
     scale: 0.95;
-    /* border: 1px solid black; */
-    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
-    /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
     box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset,
       rgba(18, 18, 18, 0.5) -3px -3px 6px 1px inset;
     transition: 0.5s;
@@ -72,11 +67,68 @@ export const StyledSkills = styled.div`
     gap: 12px;
     transition: 0.2s;
   }
-  /* .skill:hover {
-    scale: 1.2;
-    transition: 0.5s;
-  } */
   .skill img {
     width: 36px;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    background-color: blue;
+  }
+
+  @media screen and (max-width: 991.98px) {
+    background-color: skyblue;
+    .learning {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    background-color: red;
+    .line {
+      display: none;
+    }
+    .learned {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .learned :nth-child(5) {
+      grid-row-start: 1;
+      grid-row-end: span 2;
+      grid-column-start: 2;
+      grid-column-end: span 1;
+    }
+    .learning {
+      width: 90%;
+    }
+    #current-learning {
+      width: 100%;
+    }
+    #current-learning-list li {
+      margin: 16px;
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 575.98px) {
+    background-color: teal;
+    .skill-list ul {
+      margin-left: 30%;
+    }
+    .learned {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .learned :nth-child(5) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .learning {
+      align-self: center;
+    }
+    #current-learning {
+      margin: auto;
+      width: 80%;
+    }
+    #current-learning-list li {
+      display: flex;
+    }
   }
 `;

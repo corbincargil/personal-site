@@ -81,7 +81,7 @@ export default function Skills() {
         <div className="learning">
           <div className="skill-list" id="current-learning">
             <h2>Current Learning</h2>
-            <ul>
+            <ul id="current-learning-list">
               {skills.map((skill) => {
                 if (skill.category === "current-learning") {
                   return <SkillIcon key={skill.id} skill={skill} />;
