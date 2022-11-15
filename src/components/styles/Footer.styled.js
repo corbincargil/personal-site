@@ -12,10 +12,28 @@ export const StyledFooter = styled.footer`
     rgba(0, 0, 0, 0.3) 0px -30px -60px -30px;
 
   #footer-logo {
-    width: 16%;
+    width: 20%;
   }
 
   p {
     font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 991.98px) {
+    #footer-logo {
+      width: 25%;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    #footer-logo {
+      width: 30%;
+    }
+  }
+
+  @media screen and (max-width: 575.98px) {
+    #footer-logo {
+      width: 40%;
+    }
   }
 `;
