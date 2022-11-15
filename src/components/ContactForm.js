@@ -22,7 +22,7 @@ export default function ContactForm() {
   }
 
   return (
-    <StyledForm id="contact">
+    <StyledForm id="contact" method="POST" name="contact">
       <label htmlFor="name">Name:</label>
       <input
         type="text"
