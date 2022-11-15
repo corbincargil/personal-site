@@ -45,6 +45,7 @@ export default function ContactForm() {
     <StyledForm
       id="contact"
       // onSubmit={submitForm}
+      method="post"
       name="contact"
       data-netlify="true"
     >
