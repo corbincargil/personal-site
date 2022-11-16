@@ -33,12 +33,6 @@ export default function Projects() {
         <strong>{/* <h2>Featured</h2> */}</strong>
         <FeaturedProjects />
       </div>
-      <p>
-        Icons by:{" "}
-        <a href="https://www.flaticon.com/free-icons/next" title="next icons">
-          Next icons created by Arkinasi - Flaticon
-        </a>
-      </p>
     </StyledProjects>
   );
 }

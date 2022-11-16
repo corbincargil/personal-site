@@ -2,44 +2,44 @@ import React, { useState } from "react";
 import { StyledForm } from "./styles/Contact.styled";
 
 export default function ContactForm() {
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
+  // const encode = (data) => {
+  //   return Object.keys(data)
+  //     .map(
+  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+  //     )
+  //     .join("&");
+  // };
 
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
 
-  function onUserInput(e) {
-    const updatedForm = {
-      ...form,
-      [e.target.name]: e.target.value,
-    };
-    setForm(updatedForm);
-  }
+  // function onUserInput(e) {
+  //   const updatedForm = {
+  //     ...form,
+  //     [e.target.name]: e.target.value,
+  //   };
+  //   setForm(updatedForm);
+  // }
 
-  function submitForm(e) {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
-    })
-      .then(() =>
-        alert(
-          `Thank you, ${form.name}! Your contact request has been submitted.`
-        )
-      )
-      .catch((error) => alert(error));
+  // function submitForm(e) {
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({ "form-name": "contact", ...this.state }),
+  //   })
+  //     .then(() =>
+  //       alert(
+  //         `Thank you, ${form.name}! Your contact request has been submitted.`
+  //       )
+  //     )
+  //     .catch((error) => alert(error));
 
-    e.preventDefault();
-  }
+  //   e.preventDefault();
+  // }
 
   return (
     <StyledForm
@@ -48,7 +48,7 @@ export default function ContactForm() {
       method="post"
       name="contact"
       data-netlify="true"
-      onSubmit="submit"
+      // onSubmit="submit"
     >
       <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="name">

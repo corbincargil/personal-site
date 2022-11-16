@@ -100,6 +100,7 @@ export const StyledForm = styled.form`
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  z-index: 2;
 
   label {
     font-family: inherit;

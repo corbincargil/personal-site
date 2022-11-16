@@ -19,6 +19,11 @@ export const StyledFooter = styled.footer`
     font-size: 0.9rem;
   }
 
+  #credits-button:hover {
+    color: orange;
+    transition: 0.1s;
+  }
+
   @media screen and (max-width: 991.98px) {
     #footer-logo {
       width: 25%;
