@@ -36,6 +36,11 @@ export const StyledAbout = styled.div`
     line-height: 30px;
   }
 
+  a,
+  a:visited {
+    color: inherit;
+  }
+
   @media screen and (max-width: 1199.98px) {
     img {
       width: 45%;

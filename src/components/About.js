@@ -33,12 +33,20 @@ export default function About() {
         <img src={portrait} alt="Portrait" />
         <p>
           Hi, I'm Corbin. I am a self-taught software developer based out of
-          South Texas. I love working with React and other front-end libraries,
-          and am currently cultivating a deeper appreciation for server-side
-          programming as I learn Node and Express. When I'm not at my computer,
-          I am usually spending time with family or friends. Some of my hobbies
-          include reading, working out, or watching <a>chess tutorials</a> on
-          Youtube.
+          South Texas with a{" "}
+          <a href="https://econbus.mines.edu/engineering-technology-management/">
+            M.S.
+          </a>{" "}
+          &{" "}
+          <a href="https://www.mines.edu/academics/mechanical-engineering-degree/">
+            B.S.
+          </a>{" "}
+          from Colorado School of Mines. I love working with React and other
+          front-end libraries, and am currently cultivating a deeper
+          appreciation for server-side programming as I learn Node and Express.
+          When I'm not at my computer, I am usually spending time with family or
+          friends. Some of my hobbies include reading, working out, or watching{" "}
+          <a>chess tutorials</a> on Youtube.
         </p>
         {/* <p>
           Hi, I’m Corbin. I am a self-taught software developer born & raised in
