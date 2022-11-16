@@ -2,7 +2,7 @@ import styled from "styled-components";
 import hero from "../../images/hero.jpg";
 
 const containerWidth = "30%";
-const containerHeight = "450px";
+const containerHeight = "400px";
 const containerMargin = "30px 10px";
 const containerPadding = "25px";
 const containerBgColor = "#c2c2c2ae";
@@ -65,7 +65,6 @@ export const StyledContact = styled.div`
   }
 
   @media screen and (max-width: 991.98px) {
-    background-color: green;
     flex-direction: column;
     align-items: center;
     #connect {
@@ -105,10 +104,12 @@ export const StyledForm = styled.form`
   label {
     font-family: inherit;
     align-self: flex-start;
+    width: 80%;
   }
 
   input,
   textarea {
+    padding: 4px;
     font-family: inherit;
     border-radius: 5px;
     resize: none;
@@ -125,14 +126,14 @@ export const StyledForm = styled.form`
   #email,
   #subject,
   #message {
-    width: 80%;
+    width: 100%;
   }
   #message {
     height: 120px;
   }
 
   #submit {
-    align-self: flex-end;
+    align-self: center;
     background-color: orange;
     color: black;
     width: 100px;
