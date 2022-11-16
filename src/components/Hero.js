@@ -46,11 +46,6 @@ export default function Hero() {
             />
           </Logo>
         </Parallax>
-        <p>
-          <a href="https://www.pexels.com/photo/blue-and-white-starry-night-sky-4644812/">
-            Photo by Felix Mittermeier:
-          </a>
-        </p>
       </div>
     </StyledHero>
   );

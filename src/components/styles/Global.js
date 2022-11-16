@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
     html, body {
         max-width: 100%;
         overflow-x: hidden;
+        overflow-y: visible;
         padding: 0px;
         margin: 0px;
         font-family:  "Open Sans", sans-serif;

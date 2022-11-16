@@ -3,7 +3,7 @@ import hero from "../../images/hero.jpg";
 
 const containerWidth = "30%";
 const containerHeight = "400px";
-const containerMargin = "30px 10px";
+const containerMargin = "20px 10px";
 const containerPadding = "25px";
 const containerBgColor = "#c2c2c2ae";
 const containerTextColor = "black";
@@ -163,5 +163,9 @@ export const StyledForm = styled.form`
 
   @media screen and (max-width: 767.98px) {
     width: 70%;
+    height: calc(${containerHeight}*.8);
+    #message {
+      height: 60px;
+    }
   }
 `;

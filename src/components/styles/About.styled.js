@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledAbout = styled.div`
   margin: 50px 0px;
-  min-height: 55vh;
+  min-height: 80vh;
   /* border-bottom: solid 1px black; */
 
   #about-title {
@@ -12,8 +12,9 @@ export const StyledAbout = styled.div`
   #about-content {
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    gap: 100px;
     padding: 40px 40px 80px;
     width: 80%;
   }
@@ -49,16 +50,23 @@ export const StyledAbout = styled.div`
   @media screen and (max-width: 991.98px) {
     #about-content {
       margin: auto;
-      width: 90%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
+    p {
+      width: 65%;
+    }
+    img {
+      width: 55%;
     }
   }
 
   @media screen and (max-width: 767.98px) {
     #about-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      align-items: flex-start;
     }
     img {
       width: 70%;
