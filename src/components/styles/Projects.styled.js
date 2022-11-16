@@ -66,9 +66,9 @@ export const StyledFeaturedProjectsDisplay = styled.div`
   }
   img.project-image:hover {
     scale: 1.03;
-    box-shadow: rgba(32, 27, 87, 0.24) 0px 54px 55px,
-      rgba(32, 27, 87, 0.24) 0px -12px 30px, rgba(32, 27, 87, 0.24) 0px 4px 6px,
-      rgba(32, 27, 87, 0.24) 0px 12px 13px, rgba(32, 27, 87, 0.24) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 54px 55px,
+      rgba(0, 0, 0, 0.24) 0px -12px 30px, rgba(0, 0, 0, 0.24) 0px 4px 6px,
+      rgba(0, 0, 0, 0.24) 0px 12px 13px, rgba(0, 0, 0, 0.24) 0px -3px 5px;
     transition: 0.5s;
     border: 1px solid orange;
   }
