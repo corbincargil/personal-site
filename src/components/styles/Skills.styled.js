@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const StyledSkills = styled.div`
-  background-color: #06074a;
+  /* background-color: #06074a; */
+  background-color: white;
   color: #06074a;
   margin-top: 2rem;
   padding: 1.5rem;
@@ -44,7 +45,8 @@ export const StyledSkills = styled.div`
     list-style: none;
     padding: 16px;
     /* background-color: #e6af48; */
-    background-color: white;
+    /* background-color: white; */
+    background-color: #06074a22;
     border: 2px solid black;
     border-radius: 10px;
     transition: 0.5s;

@@ -70,6 +70,7 @@ export const StyledFeaturedProjectsDisplay = styled.div`
       rgba(32, 27, 87, 0.24) 0px -12px 30px, rgba(32, 27, 87, 0.24) 0px 4px 6px,
       rgba(32, 27, 87, 0.24) 0px 12px 13px, rgba(32, 27, 87, 0.24) 0px -3px 5px;
     transition: 0.5s;
+    border: 1px solid orange;
   }
   .button {
     height: 64px;

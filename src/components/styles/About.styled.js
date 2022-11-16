@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledAbout = styled.div`
   margin: 50px 0px;
-  min-height: 70vh;
+  min-height: 55vh;
   /* border-bottom: solid 1px black; */
 
   #about-title {
@@ -29,6 +29,7 @@ export const StyledAbout = styled.div`
   }
 
   p {
+    margin-top: 30px;
     width: 55%;
     font-size: 1.2rem;
     line-height: 30px;

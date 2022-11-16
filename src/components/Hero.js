@@ -38,7 +38,7 @@ export default function Hero() {
     <StyledHero>
       <div id="animation" ref={myRef} onScroll={startTransition}>
         <Navbar />
-        <Parallax speed={15}>
+        <Parallax speed={25}>
           <Logo id="banner">
             <StaticImage
               src="../images/corbin-logo-white-cropped.png"
