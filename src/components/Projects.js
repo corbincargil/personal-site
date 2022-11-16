@@ -7,7 +7,7 @@ import FeaturedProjects from "./FeaturedProjects";
 
 export default function Projects() {
   const contentRef = useRef(null);
-  const contentIsInView = useInView(contentRef);
+  const contentIsInView = useInView(contentRef, { once: true });
 
   return (
     <StyledProjects id="projects">

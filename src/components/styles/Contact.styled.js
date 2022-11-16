@@ -13,11 +13,12 @@ const containerBorderRadius = "10px";
 
 export const StyledContact = styled.div`
   min-height: 80vh;
-  background-image: url(${hero});
+  /* background-image: url(${hero});
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #00003c;
 
   display: flex;
   flex-direction: row;
