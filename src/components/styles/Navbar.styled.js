@@ -14,4 +14,19 @@ export const StyledNavbar = styled.div`
     transition: 0.2s;
   }
   z-index: 3;
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 991.98px) {
+  }
+
+  @media screen and (max-width: 767.98px) {
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 575.98px) {
+    font-size: 1rem;
+  }
 `;

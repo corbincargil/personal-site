@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import hero from "../../images/hero.jpg";
 
 export const StyledHero = styled.div`
   height: 100vh;
@@ -27,5 +26,29 @@ export const Logo = styled.div`
   img {
     margin-right: 1rem;
     width: 50rem;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    img {
+      width: 45rem;
+    }
+  }
+
+  @media screen and (max-width: 991.98px) {
+    img {
+      width: 35rem;
+    }
+  }
+
+  @media screen and (max-width: 767.98px) {
+    img {
+      width: 30rem;
+    }
+  }
+
+  @media screen and (max-width: 575.98px) {
+    img {
+      width: 20rem;
+    }
   }
 `;
