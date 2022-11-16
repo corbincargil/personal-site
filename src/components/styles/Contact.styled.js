@@ -80,7 +80,6 @@ export const StyledContact = styled.div`
   }
 
   @media screen and (max-width: 767.98px) {
-    background-color: blue;
     #connect {
       width: 70%;
     }
