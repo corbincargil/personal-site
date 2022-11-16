@@ -32,6 +32,15 @@ export default function About() {
       >
         <img src={portrait} alt="Portrait" />
         <p>
+          Hi, I'm Corbin. I am a self-taught software developer based out of
+          South Texas. I love working with React and other front-end libraries,
+          and am currently cultivating a deeper appreciation for server-side
+          programming as I learn Node and Express. When I'm not at my computer,
+          I am usually spending time with family or friends. Some of my hobbies
+          include reading, working out, or watching <a>chess tutorials</a> on
+          Youtube.
+        </p>
+        {/* <p>
           Hi, I’m Corbin. I am a self-taught software developer born & raised in
           south Texas and based in San Antonio. After majoring in mechanical
           engineering at Colorado School of Mines, I began building my
@@ -44,7 +53,7 @@ export default function About() {
           spending time with family & friends, and reading. I also really enjoy
           watching movies/TV, but try to not spend too much time inside if I can
           help it.
-        </p>
+        </p> */}
         {/* <p>
           Old github bio: Hi, I'm Corbin and I am a mechanical engineering
           graduate turned software engineer. I use Github to track my learning

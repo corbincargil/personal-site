@@ -85,10 +85,6 @@ export const StyledContact = styled.div`
       width: 70%;
     }
   }
-
-  @media screen and (max-width: 575.98px) {
-    background-color: red;
-  }
 `;
 
 export const StyledForm = styled.form`
@@ -156,21 +152,14 @@ export const StyledForm = styled.form`
   }
 
   @media screen and (max-width: 1199.98px) {
-    background-color: yellow;
     width: 35%;
   }
 
   @media screen and (max-width: 991.98px) {
-    background-color: green;
     width: 50%;
   }
 
   @media screen and (max-width: 767.98px) {
-    background-color: blue;
     width: 70%;
-  }
-
-  @media screen and (max-width: 575.98px) {
-    background-color: red;
   }
 `;

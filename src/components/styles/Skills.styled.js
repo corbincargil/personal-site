@@ -43,7 +43,8 @@ export const StyledSkills = styled.div`
   .skill-list {
     list-style: none;
     padding: 16px;
-    background-color: #e6af48;
+    /* background-color: #e6af48; */
+    background-color: white;
     border: 2px solid black;
     border-radius: 10px;
     transition: 0.5s;
@@ -71,19 +72,13 @@ export const StyledSkills = styled.div`
     width: 36px;
   }
 
-  @media screen and (max-width: 1199.98px) {
-    background-color: blue;
-  }
-
   @media screen and (max-width: 991.98px) {
-    background-color: skyblue;
     .learning {
       width: 50%;
     }
   }
 
   @media screen and (max-width: 767.98px) {
-    background-color: red;
     .line {
       display: none;
     }
@@ -109,7 +104,6 @@ export const StyledSkills = styled.div`
   }
 
   @media screen and (max-width: 575.98px) {
-    background-color: teal;
     .skill-list ul {
       margin-left: 30%;
     }

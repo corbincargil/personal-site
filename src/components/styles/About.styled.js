@@ -2,12 +2,8 @@ import styled from "styled-components";
 
 export const StyledAbout = styled.div`
   margin: 50px 0px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   min-height: 70vh;
-  border-bottom: solid 1px black;
+  /* border-bottom: solid 1px black; */
 
   #about-title {
     font-size: 1.5rem;
@@ -27,6 +23,9 @@ export const StyledAbout = styled.div`
     height: auto;
     aspect-ratio: 1.25;
     border-radius: 20px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
 
   p {
@@ -36,9 +35,6 @@ export const StyledAbout = styled.div`
   }
 
   @media screen and (max-width: 1199.98px) {
-    #about-content {
-      background-color: yellow;
-    }
     img {
       width: 45%;
     }
@@ -51,23 +47,13 @@ export const StyledAbout = styled.div`
 
   @media screen and (max-width: 991.98px) {
     #about-content {
-      background-color: red;
       margin: auto;
       width: 90%;
-    }
-    img {
-    }
-    p {
     }
   }
 
   @media screen and (max-width: 767.98px) {
-    #about-title {
-      color: red;
-    }
     #about-content {
-      background-color: green;
-
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -78,16 +64,6 @@ export const StyledAbout = styled.div`
     }
     p {
       width: 80%;
-    }
-  }
-
-  @media screen and (max-width: 575.98px) {
-    #about-content {
-      background-color: blue;
-    }
-    img {
-    }
-    p {
     }
   }
 `;

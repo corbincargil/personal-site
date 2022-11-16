@@ -20,8 +20,7 @@ export const StyledProjects = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
+    /* border-bottom: solid 1px black; */
   }
 
   #project-content h2 {
@@ -148,7 +147,6 @@ export const StyledFeaturedProjectsDisplay = styled.div`
   }
 
   @media screen and (max-width: 1199.98px) {
-    background-color: red;
     flex-direction: column;
     gap: 40px;
     align-items: center;
@@ -159,7 +157,6 @@ export const StyledFeaturedProjectsDisplay = styled.div`
   }
 
   @media screen and (max-width: 991.98px) {
-    background-color: green;
     #main-content,
     #secondary-content {
       margin: 0;
@@ -181,12 +178,7 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     }
   }
 
-  @media screen and (max-width: 767.98px) {
-    background-color: blue;
-  }
-
   @media screen and (max-width: 575.98px) {
-    background-color: yellow;
     .tag {
       display: block;
     }

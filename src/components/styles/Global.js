@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
         overflow-x: hidden;
         padding: 0px;
         margin: 0px;
-        font-family: "Gothic A1", "Open Sans", sans-serif;
+        font-family:  "Open Sans", sans-serif;
     }
 
     .section-title {
