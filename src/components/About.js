@@ -45,8 +45,8 @@ export default function About() {
           front-end libraries, and am currently cultivating a deeper
           appreciation for server-side programming as I learn Node and Express.
           When I'm not at my computer, I am usually spending time with family or
-          friends. Some of my hobbies include reading, working out, or watching{" "}
-          <a>chess tutorials</a> on Youtube.
+          friends. Some of my hobbies include reading, working out, or watching
+          chess tutorials on Youtube.
         </p>
         {/* <p>
           Hi, I’m Corbin. I am a self-taught software developer born & raised in

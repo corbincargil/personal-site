@@ -14,6 +14,10 @@ const GlobalStyles = createGlobalStyle`
         color: orange;
         font-size: 3rem;
     }
+
+    a:hover {
+        cursor: pointer;
+    }
 `;
 
 export default GlobalStyles;

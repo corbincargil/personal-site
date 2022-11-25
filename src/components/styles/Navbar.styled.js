@@ -12,6 +12,7 @@ export const StyledNavbar = styled.div`
   li:hover {
     color: orange;
     transition: 0.2s;
+    cursor: pointer;
   }
   z-index: 3;
 

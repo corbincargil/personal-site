@@ -41,6 +41,10 @@ export const StyledAbout = styled.div`
     color: inherit;
   }
 
+  a:hover {
+    color: orange;
+  }
+
   @media screen and (max-width: 1199.98px) {
     img {
       width: 45%;
