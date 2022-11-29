@@ -7,6 +7,7 @@ import { Parallax } from "react-scroll-parallax";
 import { useInView } from "framer-motion";
 
 export default function About() {
+  console.log(typeof portrait);
   const contentRef = useRef(null);
   const contentIsInView = useInView(contentRef, { once: true });
   return (
@@ -30,7 +31,7 @@ export default function About() {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <img src={portrait} alt="Portrait" />
+        <StaticImage src="../images/portrait.jpg" alt="Picture of me" />
         <p>
           Hi, I'm Corbin. I am a self-taught software developer based out of
           South Texas with a{" "}

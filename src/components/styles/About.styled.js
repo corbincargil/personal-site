@@ -19,8 +19,12 @@ export const StyledAbout = styled.div`
     width: 80%;
   }
 
-  img {
+  .gatsby-image-wrapper {
     width: 40%;
+  }
+
+  img {
+    width: 100%;
     height: auto;
     aspect-ratio: 1.25;
     border-radius: 20px;
@@ -46,7 +50,7 @@ export const StyledAbout = styled.div`
   }
 
   @media screen and (max-width: 1199.98px) {
-    img {
+    .gatsby-image-wrapper {
       width: 45%;
     }
     p {
@@ -68,7 +72,7 @@ export const StyledAbout = styled.div`
     p {
       width: 65%;
     }
-    img {
+    .gatsby-image-wrapper {
       width: 55%;
     }
   }
@@ -77,7 +81,7 @@ export const StyledAbout = styled.div`
     #about-content {
       align-items: flex-start;
     }
-    img {
+    .gatsby-image-wrapper {
       width: 70%;
     }
     p {
