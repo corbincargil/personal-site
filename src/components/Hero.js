@@ -39,13 +39,15 @@ export default function Hero() {
       <div id="animation" ref={myRef}>
         <Navbar />
         <Parallax speed={25}>
-          <Logo id="banner">
-            <StaticImage
-              src="../images/corbin-logo-white-cropped.png"
-              alt="Corbin Cargil logo"
-              placeholder="blurred"
-            />
-          </Logo>
+          <StaticImage
+            id="banner"
+            src="../images/corbin-logo-white-cropped.png"
+            alt="Corbin Cargil logo"
+            placeholder="none"
+            style={{
+              top: "50vh",
+            }}
+          />
         </Parallax>
       </div>
     </StyledHero>
