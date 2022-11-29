@@ -49,14 +49,13 @@ export const StyledSkills = styled.div`
     background-color: #06074a22;
     border: 2px solid black;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.1s;
     width: 75%;
   }
   .skill-list:hover {
-    scale: 0.95;
-    box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset,
-      rgba(18, 18, 18, 0.5) -3px -3px 6px 1px inset;
-    transition: 0.5s;
+    box-shadow: rgb(0, 0, 0) 1px 1px 1px 0px inset,
+      rgba(18, 18, 18, 0.5) -1px -1px 1px 1px inset;
+    transition: 0.1s;
   }
   .skill-list ul {
     margin: 0;
@@ -64,10 +63,14 @@ export const StyledSkills = styled.div`
   }
   .skill {
     margin: 8px 0px;
-    width: clamp(130px, 200px, 15%);
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 12px;
+    transition: 0.2s;
+  }
+  .skill:hover {
+    translate: 10px;
     transition: 0.2s;
   }
   .skill img {

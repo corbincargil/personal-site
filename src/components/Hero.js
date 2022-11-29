@@ -36,13 +36,14 @@ export default function Hero() {
   }, [vantaEffect]);
   return (
     <StyledHero>
-      <div id="animation" ref={myRef} onScroll={startTransition}>
+      <div id="animation" ref={myRef}>
         <Navbar />
         <Parallax speed={25}>
           <Logo id="banner">
             <StaticImage
               src="../images/corbin-logo-white-cropped.png"
               alt="Corbin Cargil logo"
+              placeholder="blurred"
             />
           </Logo>
         </Parallax>

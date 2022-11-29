@@ -31,7 +31,12 @@ export default function About() {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <StaticImage src="../images/portrait.jpg" alt="Picture of me" />
+        <StaticImage
+          src="../images/portrait.jpg"
+          alt="Picture of me"
+          placeholder="blurred"
+          aspectRatio={1.25}
+        />
         <p>
           Hi, I'm Corbin. I am a self-taught software developer based out of
           South Texas with a{" "}

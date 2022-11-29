@@ -7,13 +7,13 @@ export default function SkillIcon(props) {
   return (
     <motion.li
       className={`skill ${skill.category}`}
-      whileHover={{ scale: 1.2 }}
-      whileTap={{ scale: 1.1 }}
-      drag
-      dragConstraints={{ left: -10, right: 10, top: 10, bottom: -10 }}
-      dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
+      // whileHover={{ scale: 1.05 }}
+      // whileTap={{ scale: 1.05 }}
+      // drag
+      // dragConstraints={{ left: -10, right: 10, top: 10, bottom: -10 }}
+      // dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
     >
-      <img src={skill.icon} alt={`${skill.name} icon`} />
+      <img src={skill.icon} alt={`${skill.name} icon`} draggable="false" />
       <span>{skill.name}</span>
     </motion.li>
   );

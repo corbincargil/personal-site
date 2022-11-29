@@ -9,6 +9,9 @@ import left from "../images/left.png";
 import right from "../images/right.png";
 import githubIcon from "../images/github-60.png";
 
+import { graphql } from "gatsby";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+
 export default function FeaturedProjectsDisplay() {
   const contentRef = useRef(null);
   const contentIsInView = useInView(contentRef, { once: true });
@@ -91,6 +94,7 @@ export default function FeaturedProjectsDisplay() {
           >
             <a id="live-link" href={project.liveLink} target="_blank">
               <img
+                id="project-image"
                 src={project.image}
                 className="project-image"
                 alt="Featured project image"
@@ -157,7 +161,7 @@ const featuredProjects = [
     liveLink: "https://corbincargil.github.io/shopping-cart/",
     repoLink: "https://github.com/corbincargil/shopping-cart",
     description:
-      "This is a mock online shopping website based on skatewarehouse.com that was built using React. Users can navigate the website, shop for different products based on brand or product type, add items to the cart, and 'checkout' to submit their order. The primary goals of this project were to 1) practice using React Router to navigate to different pages on the site and 2) practice using hooks to manipulate state accross components (for example, allowing a user to add a product to their cart from the Shop page and have the added product and all its info appear on the Cart page).",
+      "This is a mock online shopping website that was built using React. Users can shop for different products based on brand or product type, add/edit items in the cart, and 'checkout' to submit their order. The primary goals of this project were to 1) implement React Router for site navigation and 2) utilize hooks to efficiently manage state accross components.",
     id: 2,
   },
   {
