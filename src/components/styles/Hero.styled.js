@@ -9,15 +9,32 @@ export const StyledHero = styled.div`
     width: 100%;
   }
 
-  #animation .gatsby-image-wrapper {
-    width: 60%;
-    margin-left: 40%;
+  #animation :nth-child(2) {
+    align-self: flex-end;
   }
 
-  @media screen and (max-width: 1199.98px) {
+  #animation .gatsby-image-wrapper {
+    width: 750px;
+  }
+
+  @media screen and (max-width: 1150px) {
     #animation .gatsby-image-wrapper {
-      width: clamp(250px, 75%, 1000px);
-      margin-left: 25%;
+      width: 650px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    #animation .gatsby-image-wrapper {
+      width: 550px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    #animation .gatsby-image-wrapper {
+      width: 450px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    #animation .gatsby-image-wrapper {
+      width: 350px;
     }
   }
 `;

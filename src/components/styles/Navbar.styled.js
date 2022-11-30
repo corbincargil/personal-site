@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
-  color: white;
+  color: orange;
   font-size: 1.4rem;
   ul {
     list-style: none;
@@ -10,7 +10,7 @@ export const StyledNavbar = styled.div`
     gap: 1.5rem;
   }
   li:hover {
-    color: orange;
+    color: white;
     transition: 0.2s;
     cursor: pointer;
   }

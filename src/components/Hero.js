@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect, startTransition } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { StyledHero, Logo } from "./styles/Hero.styled";
+import { StyledHero } from "./styles/Hero.styled";
 import Navbar from "./Navbar";
 import { Parallax } from "react-scroll-parallax";
 
@@ -42,11 +42,12 @@ export default function Hero() {
           <StaticImage
             id="banner"
             src="../images/corbin-logo-white-cropped.png"
-            alt="Corbin Cargil logo"
+            alt="Corbin Cargil logo (white)"
             placeholder="none"
             style={{
               top: "50vh",
             }}
+            draggable="false"
           />
         </Parallax>
       </div>
