@@ -127,6 +127,7 @@ export default function FeaturedProjectsDisplay() {
               <GatsbyImage
                 id="project-image"
                 image={images[num]}
+                placeholder="blurred"
                 className="project-image"
                 alt={`${project.name} preview image`}
               />
