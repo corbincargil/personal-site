@@ -3,16 +3,16 @@ import { StyledFeaturedProjectsDisplay } from "./styles/Projects.styled";
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import shoppingCart from "../images/shopping-cart.png";
-import waldo from "../images/waldo.png";
 import etchASketch from "../images/etch-a-sketch.png";
 import left from "../images/left.png";
 import right from "../images/right.png";
 import githubIcon from "../images/github-60.png";
 
-import { graphql } from "gatsby";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function FeaturedProjectsDisplay() {
+  //animations
   const contentRef = useRef(null);
   const contentIsInView = useInView(contentRef, { once: true });
   const container = {
@@ -34,6 +34,38 @@ export default function FeaturedProjectsDisplay() {
     },
   };
 
+  //dynamic images
+  let images = [];
+  const query = useStaticQuery(graphql`
+    query {
+      waldo: file(relativePath: { eq: "odlaw.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      sketch: file(relativePath: { eq: "etch-a-sketch.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      cart: file(relativePath: { eq: "shopping-cart.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  `);
+  console.log(query);
+  const waldoImage = getImage(query.waldo);
+  images.push(waldoImage);
+
+  const cartImage = getImage(query.cart);
+  images.push(cartImage);
+
+  const sketchImage = getImage(query.sketch);
+  images.push(sketchImage);
+
+  //state
   const [num, setNum] = useState(0);
   const [project, setProject] = useState(featuredProjects[num]);
 
@@ -67,7 +99,6 @@ export default function FeaturedProjectsDisplay() {
         initial="hidden"
         animate="visible"
       >
-        {/* <motion.h3 variants={item}>{project.name}</motion.h3> */}
         <motion.div variants={item} id="preview-container">
           <motion.img
             src={left}
@@ -93,11 +124,11 @@ export default function FeaturedProjectsDisplay() {
             }}
           >
             <a id="live-link" href={project.liveLink} target="_blank">
-              <img
+              <GatsbyImage
                 id="project-image"
-                src={project.image}
+                image={images[num]}
                 className="project-image"
-                alt="Featured project image"
+                alt={`${project.name} preview image`}
               />
             </a>
           </motion.div>
@@ -146,7 +177,7 @@ export default function FeaturedProjectsDisplay() {
 const featuredProjects = [
   {
     name: "Where's Waldo",
-    image: waldo,
+    // image: waldo,
     tags: ["Firebase", "React", "State management", "Firestore"],
     liveLink: "https://corbincargil.github.io/waldo/",
     repoLink: "https://github.com/corbincargil/waldo",
@@ -156,7 +187,7 @@ const featuredProjects = [
   },
   {
     name: "Shopping Cart",
-    image: shoppingCart,
+    // image: shoppingCart,
     tags: ["React", "State management", "ES6", "Hooks"],
     liveLink: "https://corbincargil.github.io/shopping-cart/",
     repoLink: "https://github.com/corbincargil/shopping-cart",
@@ -166,7 +197,7 @@ const featuredProjects = [
   },
   {
     name: "Etch-a-Sketch",
-    image: etchASketch,
+    // image: etchASketch,
     tags: ["DOM-manipulation", "ES6", "HTML & CSS"],
     liveLink: "https://corbincargil.github.io/etch-a-sketch/",
     repoLink: "https://github.com/corbincargil/etch-a-sketch",
