@@ -12,11 +12,11 @@ export const StyledFooter = styled.footer`
     rgba(0, 0, 0, 0.3) 0px -30px -60px -30px;
 
   #footer-logo {
-    width: 20%;
+    width: 240px;
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   #credits-button:hover {
@@ -25,20 +25,15 @@ export const StyledFooter = styled.footer`
   }
 
   @media screen and (max-width: 991.98px) {
-    #footer-logo {
-      width: 25%;
-    }
   }
 
   @media screen and (max-width: 767.98px) {
-    #footer-logo {
-      width: 30%;
+    p {
+      width: 250px;
+      text-align: center;
     }
   }
 
   @media screen and (max-width: 575.98px) {
-    #footer-logo {
-      width: 40%;
-    }
   }
 `;
