@@ -157,7 +157,7 @@ export const StyledForm = styled.form`
 
   @media screen and (max-width: 767.98px) {
     width: 70%;
-    height: calc(${containerHeight}*.8);
+    height: calc(${containerHeight}*.85);
     #message {
       height: 60px;
     }
