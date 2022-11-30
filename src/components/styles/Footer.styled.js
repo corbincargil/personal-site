@@ -28,8 +28,11 @@ export const StyledFooter = styled.footer`
   }
 
   @media screen and (max-width: 767.98px) {
+    height: 200px;
+    justify-content: flex-end;
     p {
-      width: 250px;
+      font-size: 1rem;
+      width: 230px;
       text-align: center;
     }
   }
