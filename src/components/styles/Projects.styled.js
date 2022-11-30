@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledProjects = styled.div`
   margin-top: 1rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -14,8 +15,6 @@ export const StyledProjects = styled.div`
   }
 
   #project-content {
-    margin: 20px 0px;
-    padding: 75px 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -27,15 +26,11 @@ export const StyledProjects = styled.div`
     margin: 0;
     text-decoration: underline;
   }
-
-  @media screen and (max-width: 1199.98px) {
-    #project-content {
-      padding: 12px;
-    }
-  }
 `;
 
 export const StyledFeaturedProjectsDisplay = styled.div`
+  padding: 0;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -154,6 +149,10 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     #secondary-content {
       width: 80%;
     }
+    #project-image,
+    #live-link .gatsby-image-wrapper {
+      width: 800px;
+    }
   }
 
   @media screen and (max-width: 991.98px) {
@@ -176,11 +175,22 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     #repo-link img {
       width: 24px;
     }
+    #project-image,
+    #live-link .gatsby-image-wrapper {
+      width: 600px;
+    }
   }
 
-  @media screen and (max-width: 575.98px) {
+  @media screen and (max-width: 700px) {
+    #main-content {
+      width: 100%;
+    }
     .tag {
       display: block;
+    }
+    #project-image,
+    #live-link .gatsby-image-wrapper {
+      width: 100%;
     }
   }
 `;
