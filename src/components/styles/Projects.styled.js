@@ -57,14 +57,13 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     justify-content: space-evenly;
     align-items: center;
   }
-  img.project-image {
+  #project-image,
+  #live-link .gatsby-image-wrapper {
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-      rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-radius: 15px;
     transition: 0.5s;
   }
-  img.project-image:hover {
+  #live-link .gatsby-image-wrapper:hover {
     scale: 1.03;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 54px 55px,
       rgba(0, 0, 0, 0.24) 0px -12px 30px, rgba(0, 0, 0, 0.24) 0px 4px 6px,

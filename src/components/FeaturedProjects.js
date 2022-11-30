@@ -106,6 +106,8 @@ export default function FeaturedProjectsDisplay() {
             onClick={previousImage}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
+            alt="Previous button"
+            draggable="false"
           />
           <motion.div
             id="image-container"
@@ -123,13 +125,19 @@ export default function FeaturedProjectsDisplay() {
               delay: 1,
             }}
           >
-            <a id="live-link" href={project.liveLink} target="_blank">
+            <a
+              id="live-link"
+              href={project.liveLink}
+              target="_blank"
+              draggable="false"
+            >
               <GatsbyImage
                 id="project-image"
                 image={images[num]}
                 placeholder="blurred"
                 className="project-image"
                 alt={`${project.name} preview image`}
+                draggable="false"
               />
             </a>
           </motion.div>
@@ -139,6 +147,8 @@ export default function FeaturedProjectsDisplay() {
             onClick={nextImage}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
+            alt="Next button"
+            draggable="false"
           />
         </motion.div>
       </motion.div>
@@ -148,7 +158,7 @@ export default function FeaturedProjectsDisplay() {
             {project.name}
           </motion.h3>
           <div id="repo-link">
-            <img src={githubIcon} alt="Github logo" />
+            <img src={githubIcon} alt="Github logo" draggable="false" />
             <a href={project.repoLink} target="_blank">
               <span>Source</span>
             </a>
