@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import hero from "../../images/hero.jpg";
 
 const containerWidth = "30%";
 const containerHeight = "400px";
@@ -13,11 +12,6 @@ const containerBorderRadius = "10px";
 
 export const StyledContact = styled.div`
   min-height: 80vh;
-  /* background-image: url(${hero});
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   background-color: #00003c;
 
   display: flex;
@@ -117,9 +111,8 @@ export const StyledForm = styled.form`
   }
   input:focus,
   textarea:focus {
-    border: 1px solid black;
     outline: orange;
-    box-shadow: #ffa60078 0px 6px 12px -2px, #ffa60071 0px 3px 7px -3px;
+    border: 2px solid orange;
   }
 
   #name,
@@ -145,8 +138,10 @@ export const StyledForm = styled.form`
   #submit:hover {
     background-color: white;
     color: orange;
-    scale: 1.1;
-    transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    scale: 1.05;
+    transition: 0.1s;
   }
   #submit:active {
     scale: 0.9;
