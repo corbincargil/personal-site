@@ -40,17 +40,17 @@ export default function FeaturedProjectsDisplay() {
     query {
       waldo: file(relativePath: { eq: "odlaw.png" }) {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData(placeholder: BLURRED)
         }
       }
       sketch: file(relativePath: { eq: "etch-a-sketch.png" }) {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData(placeholder: BLURRED)
         }
       }
       cart: file(relativePath: { eq: "shopping-cart.png" }) {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData(placeholder: BLURRED)
         }
       }
     }
@@ -134,10 +134,10 @@ export default function FeaturedProjectsDisplay() {
               <GatsbyImage
                 id="project-image"
                 image={images[num]}
-                placeholder="blurred"
                 className="project-image"
                 alt={`${project.name} preview image`}
                 draggable="false"
+                loading="lazy"
               />
             </a>
           </motion.div>

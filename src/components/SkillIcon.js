@@ -13,7 +13,12 @@ export default function SkillIcon(props) {
       // dragConstraints={{ left: -10, right: 10, top: 10, bottom: -10 }}
       // dragTransition={{ bounceStiffness: 600, bounceDamping: 10 }}
     >
-      <img src={skill.icon} alt={`${skill.name} icon`} draggable="false" />
+      <img
+        src={skill.icon}
+        alt={`${skill.name} icon`}
+        draggable="false"
+        loading="lazy"
+      />
       <span>{skill.name}</span>
     </motion.li>
   );

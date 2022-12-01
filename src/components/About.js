@@ -35,11 +35,12 @@ export default function About() {
           id="portrait-img"
           src="../images/portrait.jpg"
           alt="Picture of me"
-          placeholder="blurred"
           aspectRatio={1.25}
           imgStyle={{
             width: "100%",
           }}
+          placeholder="blurred"
+          loading="lazy"
         />
         <p>
           Hi, I'm Corbin. I am a self-taught software developer based out of

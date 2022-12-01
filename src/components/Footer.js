@@ -12,6 +12,7 @@ export default function Footer(props) {
         src={logoBlack}
         alt="Corbin Cargil Logo (Black)"
         draggable="false"
+        loading="lazy"
       />
       <p>
         Designed & Developed by Corbin Cargil &copy; 2022 |{" "}

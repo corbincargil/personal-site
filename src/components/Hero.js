@@ -48,6 +48,7 @@ export default function Hero() {
               top: "50vh",
             }}
             draggable="false"
+            loading="lazy"
           />
         </Parallax>
       </div>
