@@ -20,7 +20,7 @@ export default function About() {
         translateY={[0, 0]}
         style={{ width: "min-content" }}
       >
-        <h1>About</h1>
+        <h1 className="section-title">About</h1>
       </Parallax>
       <div
         id="about-content"

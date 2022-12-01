@@ -4,11 +4,12 @@ export const StyledAbout = styled.div`
   margin: auto;
   min-height: 70vh;
 
-  #about-title {
+  /* #about-title {
     font-size: 1.5rem;
-  }
+  } */
 
   #about-content {
+    color: #00003c;
     margin: auto;
     display: flex;
     justify-content: center;

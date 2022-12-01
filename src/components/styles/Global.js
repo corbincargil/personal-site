@@ -11,13 +11,24 @@ const GlobalStyles = createGlobalStyle`
     }
 
     .section-title {
-        color: orange;
-        font-size: 3rem;
+        width: max-content;
+        background-color: orange;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 0px 10px;
     }
 
     a:hover {
         cursor: pointer;
     }
+
+    @media screen and (max-width: 767.98px) {
+    .section-title {
+        font-size: 2rem;
+    }
+}
 `;
 
 export default GlobalStyles;

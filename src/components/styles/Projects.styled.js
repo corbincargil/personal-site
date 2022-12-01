@@ -8,11 +8,10 @@ export const StyledProjects = styled.div`
   justify-content: space-around;
   min-height: 100vh;
 
-  #projects-title {
+  /* #projects-title {
     margin: 10px 0px;
     font-size: 3rem;
-    width: 100px;
-  }
+  } */
 
   #project-content {
     width: 100%;
