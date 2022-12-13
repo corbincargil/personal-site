@@ -22,6 +22,21 @@ import mongoDBIcon from "../images/skill-icons/icons8-mongodb-48.png";
 import GraphQLIcon from "../images/skill-icons/graphql-48.png";
 
 export default function Skills() {
+  function isFrontEnd(skill) {
+    return skill.category === "front-end";
+  }
+  function isBackEnd(skill) {
+    return skill.category === "back-end";
+  }
+  function isDesign(skill) {
+    return skill.category === "design";
+  }
+  function isIndustryTool(skill) {
+    return skill.category === "industry-tools";
+  }
+  function isCurrentLearning(skill) {
+    return skill.category === "current-learning";
+  }
   return (
     <StyledSkills id="skills">
       <Parallax
@@ -39,10 +54,8 @@ export default function Skills() {
           <div className="skill-list" id="front-end">
             <h2>Front End</h2>
             <ul>
-              {skills.map((skill) => {
-                if (skill.category === "front-end") {
-                  return <SkillIcon key={skill.id} skill={skill} />;
-                }
+              {skills.filter(isFrontEnd).map((skill) => {
+                return <SkillIcon key={skill.id} skill={skill} />;
               })}
             </ul>
           </div>
@@ -50,30 +63,24 @@ export default function Skills() {
           <div className="skill-list" id="back-end">
             <h2>Back End</h2>
             <ul>
-              {skills.map((skill) => {
-                if (skill.category === "back-end") {
-                  return <SkillIcon key={skill.id} skill={skill} />;
-                }
+              {skills.filter(isBackEnd).map((skill) => {
+                return <SkillIcon key={skill.id} skill={skill} />;
               })}
             </ul>
           </div>
           <div className="skill-list" id="design">
             <h2>Design</h2>
             <ul>
-              {skills.map((skill) => {
-                if (skill.category === "design") {
-                  return <SkillIcon key={skill.id} skill={skill} />;
-                }
+              {skills.filter(isDesign).map((skill) => {
+                return <SkillIcon key={skill.id} skill={skill} />;
               })}
             </ul>
           </div>
           <div className="skill-list" id="industry-tools">
             <h2>Industry Tools</h2>
             <ul>
-              {skills.map((skill) => {
-                if (skill.category === "industry-tools") {
-                  return <SkillIcon key={skill.id} skill={skill} />;
-                }
+              {skills.filter(isIndustryTool).map((skill) => {
+                return <SkillIcon key={skill.id} skill={skill} />;
               })}
             </ul>
           </div>
@@ -83,10 +90,8 @@ export default function Skills() {
           <div className="skill-list" id="current-learning">
             <h2>Current Learning</h2>
             <ul id="current-learning-list">
-              {skills.map((skill) => {
-                if (skill.category === "current-learning") {
-                  return <SkillIcon key={skill.id} skill={skill} />;
-                }
+              {skills.filter(isCurrentLearning).map((skill) => {
+                return <SkillIcon key={skill.id} skill={skill} />;
               })}
             </ul>
           </div>
