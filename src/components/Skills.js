@@ -19,6 +19,7 @@ import nodeIcon from "../images/skill-icons/icons8-nodejs-48.png";
 import styledComponentsIcon from "../images/skill-icons/styled-components-icon.png";
 import expressIcon from "../images/skill-icons/icons8-express-js-48.png";
 import mongoDBIcon from "../images/skill-icons/icons8-mongodb-48.png";
+import GraphQLIcon from "../images/skill-icons/graphql-48.png";
 
 export default function Skills() {
   return (
@@ -192,5 +193,11 @@ let skills = [
     icon: mongoDBIcon,
     category: "current-learning",
     id: 15,
+  },
+  {
+    name: "GraphQL",
+    icon: GraphQLIcon,
+    category: "industry-tools",
+    id: 16,
   },
 ];
