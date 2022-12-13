@@ -33,6 +33,12 @@ export default function Projects() {
         <strong>{/* <h2>Featured</h2> */}</strong>
         <FeaturedProjects />
       </div>
+      <h3>
+        To view a full list of my projects, please visit my{" "}
+        <u>
+          <a href="https://github.com/corbincargil?tab=repositories">Github</a>
+        </u>
+      </h3>
     </StyledProjects>
   );
 }

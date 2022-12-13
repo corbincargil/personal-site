@@ -1,17 +1,11 @@
 import styled from "styled-components";
 
 export const StyledProjects = styled.div`
-  margin-top: 1rem;
-  margin: auto;
+  margin: 1rem auto 8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   min-height: 100vh;
-
-  /* #projects-title {
-    margin: 10px 0px;
-    font-size: 3rem;
-  } */
 
   #project-content {
     width: 100%;
@@ -24,6 +18,25 @@ export const StyledProjects = styled.div`
   #project-content h2 {
     margin: 0;
     text-decoration: underline;
+  }
+  a,
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.1s;
+  }
+  a:hover {
+    color: orange;
+    transition: 0.1s;
+  }
+  h3 {
+    align-self: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    h3 {
+      font-size: 0.9rem;
+    }
   }
 `;
 
@@ -73,9 +86,11 @@ export const StyledFeaturedProjectsDisplay = styled.div`
 
   #secondary-content {
     margin: 0px 20px;
+    padding: 20px;
     width: 45%;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
   }
 
   #secondary-title-container {
@@ -96,16 +111,6 @@ export const StyledFeaturedProjectsDisplay = styled.div`
   }
   #repo-link img {
     width: 30px;
-  }
-  #repo-link a,
-  #repo-link a:visited {
-    text-decoration: none;
-    color: inherit;
-    transition: 0.5s;
-  }
-  #repo-link a:hover {
-    color: orange;
-    transition: 0.2s;
   }
 
   ul {
@@ -157,8 +162,8 @@ export const StyledFeaturedProjectsDisplay = styled.div`
   @media screen and (max-width: 991.98px) {
     #main-content,
     #secondary-content {
-      margin: 0;
-      padding: 0;
+      margin: 10px;
+      padding: 10px;
     }
     .button {
       height: 48px;
