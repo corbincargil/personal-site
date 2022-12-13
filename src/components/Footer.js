@@ -16,9 +16,9 @@ export default function Footer(props) {
       />
       <p>
         Designed & Developed by Corbin Cargil &copy; 2022 |{" "}
-        <a id="credits-button" onClick={() => setShowCredits(true)}>
+        <span id="credits-button" onClick={() => setShowCredits(true)}>
           <em>Credits</em>
-        </a>
+        </span>
       </p>
     </StyledFooter>
   );

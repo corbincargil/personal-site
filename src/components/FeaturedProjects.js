@@ -125,12 +125,7 @@ export default function FeaturedProjectsDisplay() {
               delay: 1,
             }}
           >
-            <a
-              id="live-link"
-              href={project.liveLink}
-              target="_blank"
-              draggable="false"
-            >
+            <a id="live-link" href={project.liveLink} draggable="false">
               <GatsbyImage
                 id="project-image"
                 image={images[num]}
@@ -159,7 +154,7 @@ export default function FeaturedProjectsDisplay() {
           </motion.h3>
           <div id="repo-link">
             <img src={githubIcon} alt="Github logo" draggable="false" />
-            <a href={project.repoLink} target="_blank">
+            <a href={project.repoLink}>
               <span>Source</span>
             </a>
           </div>

@@ -17,16 +17,11 @@ export default function Contact() {
         <div id="icon-container">
           <a
             href="https://www.linkedin.com/in/corbin-cargil-65b4271b5"
-            target="_blank"
             draggable="false"
           >
             <img src={linkedInIcon} alt="Linked Icon" draggable="false" />
           </a>
-          <a
-            href="https://github.com/corbincargil"
-            target="_blank"
-            draggable="false"
-          >
+          <a href="https://github.com/corbincargil" draggable="false">
             <img src={githubIcon} alt="Github Icon" draggable="false" />
           </a>
         </div>
