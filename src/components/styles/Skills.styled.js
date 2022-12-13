@@ -52,11 +52,11 @@ export const StyledSkills = styled.div`
     transition: 0.1s;
     width: 75%;
   }
-  .skill-list:hover {
+  /* .skill-list:hover {
     box-shadow: rgb(0, 0, 0) 1px 1px 1px 0px inset,
       rgba(18, 18, 18, 0.5) -1px -1px 1px 1px inset;
     transition: 0.1s;
-  }
+  } */
   .skill-list ul {
     margin: 0;
     padding: 0;

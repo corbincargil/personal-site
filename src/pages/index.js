@@ -20,8 +20,8 @@ const IndexPage = () => {
         <GlobalStyles />
         <Hero />
         <About />
-        <Skills />
         <Projects />
+        <Skills />
         <Footer setShowCredits={setShowCredits} />
         <Contact />
         {showCredits && <Credits setShowCredits={setShowCredits} />}

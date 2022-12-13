@@ -90,7 +90,6 @@ export const StyledFeaturedProjectsDisplay = styled.div`
     width: 45%;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
   }
 
   #secondary-title-container {
