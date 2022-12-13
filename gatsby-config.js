@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Corbin Cargil's Personal Site`,
     description: `A site to showcase my projects and skills as a developer`,
+    image: `./images/metaImage.png`,
     siteUrl: `https://www.corbincargil.com`,
   },
   plugins: [
