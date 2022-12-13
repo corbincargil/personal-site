@@ -2,8 +2,6 @@ import React from "react";
 import { StyledFeaturedProjectsDisplay } from "./styles/Projects.styled";
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import shoppingCart from "../images/shopping-cart.png";
-import etchASketch from "../images/etch-a-sketch.png";
 import left from "../images/left.png";
 import right from "../images/right.png";
 import githubIcon from "../images/github-60.png";
