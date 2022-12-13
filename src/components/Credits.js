@@ -32,7 +32,6 @@ export default function Credits(props) {
             <a
               href="https://www.flaticon.com/free-icons/next"
               title="next icons"
-              target="__blank"
             >
               Arkinasi - Flaticon
             </a>
@@ -42,18 +41,13 @@ export default function Credits(props) {
             <a
               href="https://icons8.com/icon/set/logos/color"
               title="skill icons"
-              target="__blank"
             >
               icons8.com
             </a>
           </p>
           <p>
             Three.js background:{" "}
-            <a
-              href="https://www.vantajs.com/"
-              title="background"
-              target="__blank"
-            >
+            <a href="https://www.vantajs.com/" title="background">
               Vanta.js
             </a>
           </p>

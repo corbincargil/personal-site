@@ -52,5 +52,6 @@ export const StyledCredits = styled.div`
   a:visited {
     color: orange;
     text-decoration: none;
+    cursor: pointer;
   }
 `;

@@ -20,6 +20,7 @@ export const StyledFooter = styled.footer`
   }
 
   #credits-button:hover {
+    cursor: pointer;
     color: orange;
     transition: 0.1s;
   }
