@@ -23,10 +23,10 @@ export default function Hero() {
           minHeight: 200.0,
           minWidth: 200.0,
           scale: 1.0,
-          color1: 0x108c,
-          color2: 0x160a37,
-          size: 2.5,
-          speed: 2.5,
+          color1: 0x10107a,
+          color2: 0x3320c8,
+          size: 1.5,
+          speed: 4.0,
         })
       );
     }
