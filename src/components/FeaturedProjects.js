@@ -51,6 +51,11 @@ export default function FeaturedProjectsDisplay() {
           gatsbyImageData(placeholder: BLURRED)
         }
       }
+      saul: file(relativePath: { eq: "better-call-saul.png" }) {
+        childImageSharp {
+          gatsbyImageData(placeholder: BLURRED)
+        }
+      }
     }
   `);
   console.log(query);
@@ -62,6 +67,9 @@ export default function FeaturedProjectsDisplay() {
 
   const sketchImage = getImage(query.sketch);
   images.push(sketchImage);
+
+  const saulImage = getImage(query.saul);
+  images.push(saulImage);
 
   //state
   const [num, setNum] = useState(0);
@@ -181,7 +189,6 @@ export default function FeaturedProjectsDisplay() {
 const featuredProjects = [
   {
     name: "Where's Waldo",
-    // image: waldo,
     tags: ["Firebase", "React", "State management", "Firestore"],
     liveLink: "https://corbincargil.github.io/waldo/",
     repoLink: "https://github.com/corbincargil/waldo",
@@ -191,7 +198,6 @@ const featuredProjects = [
   },
   {
     name: "Shopping Cart",
-    // image: shoppingCart,
     tags: ["React", "State management", "ES6", "Hooks"],
     liveLink: "https://corbincargil.github.io/shopping-cart/",
     repoLink: "https://github.com/corbincargil/shopping-cart",
@@ -201,12 +207,20 @@ const featuredProjects = [
   },
   {
     name: "Etch-a-Sketch",
-    // image: etchASketch,
     tags: ["DOM-manipulation", "ES6", "HTML & CSS"],
     liveLink: "https://corbincargil.github.io/etch-a-sketch/",
     repoLink: "https://github.com/corbincargil/etch-a-sketch",
     description:
       "This etch-a-sketch project is a simple sketching interface that allows the user to make pixel art by clicking and dragging their mouse through the grid. The grid can be reset and the number of rows & columns on the grid adjusted as well. The primary goal of this project was to practice using advanced DOM manipulation to make an interactive web page.",
     id: 3,
+  },
+  {
+    name: "BCS Memory Game",
+    tags: ["React", "State management", "ES6", "Hooks"],
+    liveLink: "https://corbincargil.github.io/memory-game/",
+    repoLink: "https://github.com/corbincargil/memory-game",
+    description:
+      "This memory game tests the player to see how many Better Call Saul characters they can keep track of, and was made using React.js. The goal of this project was to get comfortable using function components, state, and hooks in React.",
+    id: 4,
   },
 ];
