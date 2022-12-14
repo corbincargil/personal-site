@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledAbout = styled.div`
   margin: auto;
-  min-height: 70vh;
+  min-height: 90vh;
 
   /* #about-title {
     font-size: 1.5rem;
