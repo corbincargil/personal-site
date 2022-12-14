@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledHero = styled.div`
   height: 100vh;
   #animation {
+    background-color: #00003c;
     display: flex;
     flex-direction: column;
     height: 100%;

@@ -36,22 +36,41 @@ export default function Hero() {
   }, [vantaEffect]);
   return (
     <StyledHero>
-      <div id="animation" ref={myRef}>
-        <Navbar />
-        <Parallax speed={25}>
-          <StaticImage
-            id="banner"
-            src="../images/corbin-logo-white-cropped.png"
-            alt="Corbin Cargil logo (white)"
-            placeholder="none"
-            style={{
-              top: "50vh",
-            }}
-            draggable="false"
-            loading="lazy"
-          />
-        </Parallax>
-      </div>
+      {myRef ? (
+        <div id="animation" ref={myRef}>
+          <Navbar />
+          <Parallax speed={25}>
+            <StaticImage
+              id="banner"
+              src="../images/corbin-logo-white-cropped.png"
+              alt="Corbin Cargil logo (white)"
+              placeholder="none"
+              style={{
+                top: "50vh",
+              }}
+              draggable="false"
+              loading="lazy"
+            />
+          </Parallax>
+        </div>
+      ) : (
+        <div id="animation">
+          <Navbar />
+          <Parallax speed={25}>
+            <StaticImage
+              id="banner"
+              src="../images/corbin-logo-white-cropped.png"
+              alt="Corbin Cargil logo (white)"
+              placeholder="none"
+              style={{
+                top: "50vh",
+              }}
+              draggable="false"
+              loading="lazy"
+            />
+          </Parallax>
+        </div>
+      )}
     </StyledHero>
   );
 }
