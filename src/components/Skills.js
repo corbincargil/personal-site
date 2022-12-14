@@ -100,13 +100,6 @@ export default function Skills() {
     </StyledSkills>
   );
 }
-// <p>
-//   <a href="https://iconscout.com/icons/jest" target="_blank">
-//     Jest Icon
-//   </a>{" "}
-//   by <a href="https://iconscout.com/contributors/icon-54">Icon 54</a> on{" "}
-//   <a href="https://iconscout.com">IconScout</a>
-// </p>
 
 let skills = [
   {

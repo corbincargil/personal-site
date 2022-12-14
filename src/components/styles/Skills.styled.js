@@ -19,9 +19,11 @@ export const StyledSkills = styled.div`
   .learned {
     padding-bottom: 40px;
     width: 100%;
+    height: fit-content;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     border-bottom: 1px solid #e6af48;
   }
