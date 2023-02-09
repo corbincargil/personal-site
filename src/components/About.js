@@ -43,8 +43,8 @@ export default function About() {
           loading="lazy"
         />
         <p>
-          Hi, I'm Corbin. I am a self-taught software developer based out of
-          South Texas with a{" "}
+          Hi, I'm Corbin. I am a mechanical engineer based out of South Texas
+          with a{" "}
           <a href="https://econbus.mines.edu/engineering-technology-management/">
             M.S.
           </a>{" "}
@@ -52,12 +52,14 @@ export default function About() {
           <a href="https://www.mines.edu/academics/mechanical-engineering-degree/">
             B.S.
           </a>{" "}
-          from Colorado School of Mines. I love working with React and other
-          front-end libraries, and am currently cultivating a deeper
-          appreciation for server-side programming as I learn Node and Express.
-          When I'm not at my computer, I am usually spending time with family or
-          friends. Some of my hobbies include reading, working out, or watching
-          chess tutorials on Youtube.
+          from Colorado School of Mines. I created this site to help track my
+          progress as I seek to expand my skillset and learn software
+          development. I enjoy working with React and other front-end libraries,
+          and am currently cultivating a deeper appreciation for server-side
+          programming as I learn Node and Express. When I'm not working or
+          programming, I am usually spending time with family or friends. Some
+          of my hobbies include reading, working out, or watching chess
+          tutorials on Youtube.
         </p>
         {/* <p>
           Hi, I’m Corbin. I am a self-taught software developer born & raised in
