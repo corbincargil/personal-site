@@ -10,6 +10,7 @@ import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Credits from "../components/Credits";
+import ScrollToTop from "../components/ScrollToTop";
 
 const IndexPage = () => {
   const [showCredits, setShowCredits] = useState(false);
@@ -21,6 +22,7 @@ const IndexPage = () => {
         <Hero />
         <About />
         <Projects />
+        <ScrollToTop />
         <Skills />
         <Footer setShowCredits={setShowCredits} />
         <Contact />
