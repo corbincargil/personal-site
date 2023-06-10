@@ -35,10 +35,10 @@ export default function Hero() {
     };
   }, [vantaEffect]);
   return (
-    <StyledHero>
+    <StyledHero id="hero">
       {myRef ? (
         <div id="animation" ref={myRef}>
-          <Navbar />
+          <Navbar currentPage={"INDEX"} />
           <Parallax speed={25}>
             <StaticImage
               id="banner"

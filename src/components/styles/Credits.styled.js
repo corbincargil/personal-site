@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const containerWidth = "300px";
-const containerHeight = "300px";
+const containerHeight = "400px";
 const zIndex = 2000;
 
 export const StyledCredits = styled.div`
