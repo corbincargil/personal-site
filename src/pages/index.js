@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
-import { SEO } from "../components/seo";
+import { Seo } from "../components/seo";
 import GlobalStyles from "../components/styles/Global";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -34,4 +34,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <SEO title="Corbin Cargil - Portfolio" />;
+export const Head = () => <Seo title="Corbin Cargil - Portfolio" />;

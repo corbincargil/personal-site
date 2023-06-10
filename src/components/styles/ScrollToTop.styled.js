@@ -29,19 +29,4 @@ export const StyledScrollToTop = styled.div`
   img {
     width: 100%;
   }
-
-  @media screen and (max-width: 1199.98px) {
-    font-size: 1.2rem;
-  }
-
-  @media screen and (max-width: 991.98px) {
-  }
-
-  @media screen and (max-width: 767.98px) {
-    font-size: 1.1rem;
-  }
-
-  @media screen and (max-width: 575.98px) {
-    font-size: 1rem;
-  }
 `;

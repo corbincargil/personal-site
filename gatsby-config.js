@@ -30,6 +30,14 @@ module.exports = {
       __key: "pages",
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blogs",
+        path: `${__dirname}/blogs`,
+      },
+      __key: "blogs",
+    },
+    {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
