@@ -7,6 +7,7 @@ import Credits from "../../components/Credits";
 import { Seo } from "../../components/seo";
 
 //todo: setup breadcrumbs
+//todo: set up loading state
 
 const IndexPage = () => {
   const [showCredits, setShowCredits] = useState(false);

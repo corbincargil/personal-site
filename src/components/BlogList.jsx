@@ -3,6 +3,7 @@ import { navigate, graphql, useStaticQuery } from "gatsby";
 import { StyledBlogList } from "./styles/BlogList.styled";
 
 export default function BlogList() {
+  //! set loading state (is there a way to make this async?)
   const blogList = useStaticQuery(graphql`
     query {
       allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
