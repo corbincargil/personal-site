@@ -58,12 +58,12 @@ export default function About() {
           applications with modern technologies (my favorite is probably React
           ⚛️). While I have a strong background in front-end technologies, I am
           currently cultivating a deeper appreciation for server-side
-          programming at my current company (
-          <a href="https://ksensetech.com/">Ksense Technologies</a>
-          ), where I am gaining valuable experience with full-stack web apps.
-          When I'm not working or coding, I usually spend time with family or
-          friends. Some of my hobbies include reading 📚, working out 🏋️, and
-          watching chess ♟ tutorials on Youtube.
+          programming at my{" "}
+          <a href="https://ksensetech.com/">current company</a>, where I am
+          gaining valuable experience with full-stack web apps. When I'm not
+          working or coding, I usually spend time with family or friends. Some
+          of my hobbies include reading 📚, working out 🏋️, and watching chess ♟
+          tutorials on Youtube.
         </p>
         {/* <p>
           Hi, I’m Corbin. I am a self-taught software developer born & raised in
