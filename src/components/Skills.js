@@ -19,7 +19,12 @@ import nodeIcon from "../images/skill-icons/icons8-nodejs-48.png";
 import styledComponentsIcon from "../images/skill-icons/styled-components-icon.png";
 import expressIcon from "../images/skill-icons/icons8-express-js-48.png";
 import mongoDBIcon from "../images/skill-icons/icons8-mongodb-48.png";
-import GraphQLIcon from "../images/skill-icons/graphql-48.png";
+import graphQLIcon from "../images/skill-icons/graphql-48.png";
+import nextIcon from "../images/skill-icons/icons8-next.js-48.png";
+import tsIcon from "../images/skill-icons/icons8-typescript-48.png";
+import testingLibraryIcon from "../images/skill-icons/octopus-128x128.png";
+import dockerIcon from "../images/skill-icons/icons8-docker-48.png";
+import prismaIcon from "../images/skill-icons/icons8-prisma-orm-48.png";
 
 export default function Skills() {
   function isFrontEnd(skill) {
@@ -28,8 +33,8 @@ export default function Skills() {
   function isBackEnd(skill) {
     return skill.category === "back-end";
   }
-  function isDesign(skill) {
-    return skill.category === "design";
+  function isOther(skill) {
+    return skill.category === "other";
   }
   function isIndustryTool(skill) {
     return skill.category === "industry-tools";
@@ -59,19 +64,10 @@ export default function Skills() {
               })}
             </ul>
           </div>
-          <div className="line"></div>
           <div className="skill-list" id="back-end">
             <h2>Back End</h2>
             <ul>
               {skills.filter(isBackEnd).map((skill) => {
-                return <SkillIcon key={skill.id} skill={skill} />;
-              })}
-            </ul>
-          </div>
-          <div className="skill-list" id="design">
-            <h2>Design</h2>
-            <ul>
-              {skills.filter(isDesign).map((skill) => {
                 return <SkillIcon key={skill.id} skill={skill} />;
               })}
             </ul>
@@ -84,7 +80,14 @@ export default function Skills() {
               })}
             </ul>
           </div>
-          <div className="line"></div>
+          <div className="skill-list" id="other">
+            <h2>Other</h2>
+            <ul>
+              {skills.filter(isOther).map((skill) => {
+                return <SkillIcon key={skill.id} skill={skill} />;
+              })}
+            </ul>
+          </div>
         </div>
         <div className="learning">
           <div className="skill-list" id="current-learning">
@@ -102,6 +105,24 @@ export default function Skills() {
 }
 
 let skills = [
+  {
+    name: "Typescript",
+    icon: tsIcon,
+    category: "industry-tools",
+    id: 18,
+  },
+  {
+    name: "Next.js",
+    icon: nextIcon,
+    category: "industry-tools",
+    id: 17,
+  },
+  {
+    name: "React Testing Library",
+    icon: testingLibraryIcon,
+    category: "current-learning",
+    id: 19,
+  },
   {
     name: "React",
     icon: reactIcon,
@@ -127,28 +148,22 @@ let skills = [
     id: 4,
   },
   {
-    name: "Firebase",
-    icon: firebaseIcon,
-    category: "back-end",
-    id: 5,
-  },
-  {
     name: "Gatsby",
     icon: gatsbyIcon,
     category: "industry-tools",
     id: 6,
   },
   {
-    name: "Git/Github",
+    name: "Git/Github/Gitlab",
     icon: gitIcon,
     category: "industry-tools",
     id: 7,
   },
   {
-    name: "NPM",
-    icon: npmIcon,
-    category: "industry-tools",
-    id: 8,
+    name: "Node.js",
+    icon: nodeIcon,
+    category: "back-end",
+    id: 13,
   },
   {
     name: "Webpack",
@@ -165,7 +180,7 @@ let skills = [
   {
     name: "Figma",
     icon: figmaIcon,
-    category: "design",
+    category: "other",
     id: 11,
   },
   {
@@ -175,27 +190,63 @@ let skills = [
     id: 12,
   },
   {
-    name: "Node.js",
-    icon: nodeIcon,
-    category: "current-learning",
-    id: 13,
+    name: "NPM",
+    icon: npmIcon,
+    category: "other",
+    id: 8,
   },
   {
     name: "Express",
     icon: expressIcon,
-    category: "current-learning",
+    category: "none",
     id: 14,
   },
   {
     name: "Mongo DB",
     icon: mongoDBIcon,
-    category: "current-learning",
+    category: "back-end",
     id: 15,
   },
   {
     name: "GraphQL",
-    icon: GraphQLIcon,
-    category: "industry-tools",
+    icon: graphQLIcon,
+    category: "other",
     id: 16,
   },
+  {
+    name: "Docker",
+    icon: dockerIcon,
+    category: "industry-tools",
+    id: 23,
+  },
+  {
+    name: "Prisma",
+    icon: prismaIcon,
+    category: "back-end",
+    id: 23,
+  },
+  {
+    name: "Firebase",
+    icon: firebaseIcon,
+    category: "back-end",
+    id: 5,
+  },
+  // {
+  //   name: "",
+  //   icon: ,
+  //   category: "",
+  //   id: 20,
+  // },
+  // {
+  //   name: "",
+  //   icon: ,
+  //   category: "",
+  //   id: 21,
+  // },
+  // {
+  //   name: "",
+  //   icon: ,
+  //   category: "",
+  //   id: 22,
+  // },
 ];
