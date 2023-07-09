@@ -57,7 +57,7 @@ export default function About() {
           I have a passion for learning, problem-solving, and building
           applications with modern technologies (my favorite is probably React
           ⚛️). While I have a strong background in front-end technologies, I am
-          currently cultivating a deeper appreciation for server-side
+          currently cultivating a deeper appreciation for server-side 
           programming at my{" "}
           <a href="https://ksensetech.com/">current company</a>, where I am
           gaining valuable experience with full-stack web apps. When I'm not
