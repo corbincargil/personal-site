@@ -1,6 +1,7 @@
 import React from "react";
-import { navigate, graphql, useStaticQuery } from "gatsby";
-import { StyledBlogList } from "./styles/BlogList.styled";
+import { graphql, useStaticQuery } from "gatsby";
+import { StyledBlogList } from "./styles/BlogStyles";
+import BlogPreview from "./BlogPreview";
 
 export default function BlogList() {
   //! set loading state (is there a way to make this async?)
@@ -9,10 +10,17 @@ export default function BlogList() {
       allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
         nodes {
           frontmatter {
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
             title
             date
             slug
             excerpt
+            live
+            wordCount
           }
           id
         }
@@ -22,20 +30,23 @@ export default function BlogList() {
 
   return (
     <StyledBlogList>
-      <h1>These are my blogs:</h1>
-      <ul>
-        {blogList.allMdx.nodes.map((b) => {
-          return (
-            <li key={b.frontmatter.title}>
-              <h2 onClick={() => navigate(`/blogs/${b.frontmatter.slug}`)}>
-                {b.frontmatter.title}
-              </h2>
-              <p className="date-posted">{`Posted: ${b.frontmatter.date}`}</p>
-              <p>{b.frontmatter.excerpt}</p>
-              <div className="divider" />
-            </li>
-          );
-        })}
+      <h1>My posts:</h1>
+      <ul className="blog-container">
+        {blogList.allMdx.nodes
+          .filter((b) => b.frontmatter.live)
+          .map((b) => {
+            return (
+              <BlogPreview
+                image={b.frontmatter.featuredImage}
+                title={b.frontmatter.title}
+                date={b.frontmatter.date}
+                slug={b.frontmatter.slug}
+                excerpt={b.frontmatter.excerpt}
+                readTime={Math.ceil(b.frontmatter.wordCount / 200)}
+                key={b.frontmatter.title}
+              />
+            );
+          })}
       </ul>
     </StyledBlogList>
   );

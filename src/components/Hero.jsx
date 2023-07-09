@@ -55,7 +55,7 @@ export default function Hero() {
         </div>
       ) : (
         <div id="animation">
-          <Navbar />
+          <Navbar currentPage={"INDEX"} />
           <Parallax speed={25}>
             <StaticImage
               id="banner"

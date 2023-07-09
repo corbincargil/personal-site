@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { StyledBlog } from "../../components/styles/Blog.styled";
+import { StyledBlog } from "../../components/styles/BlogStyles";
+import GlobalStyles from "../../components/styles/Global";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Contact from "../../components/Contact";
@@ -22,11 +23,34 @@ const BlogPost = ({ data, children }) => {
   return (
     //? do I need this main tag?
     <main>
+      <GlobalStyles />
       <Navbar />
       <StyledBlog>
-        <h1 className="blog-title">{data.mdx.frontmatter.title}</h1>
-        {featuredImg && <GatsbyImage image={featuredImg} />}
-        <h3 className="blog-subheading">{data.mdx.frontmatter.date}</h3>
+        <div className="title-container">
+          <h1 className="blog-title">{data.mdx.frontmatter.title}</h1>
+          <h3 className="blog-subheading">
+            {data.mdx.frontmatter.date} -{" "}
+            {Math.ceil(data.mdx.frontmatter.wordCount / 200)} min. read
+          </h3>
+        </div>
+        {featuredImg && (
+          <div className="image-container">
+            <GatsbyImage
+              className="featured-image"
+              image={featuredImg}
+              alt={`${data.mdx.frontmatter.title} featured image`}
+            />
+            <span className="image-credit">
+              Image by:{" "}
+              <a
+                className="image-credit-link"
+                href={data.mdx.frontmatter.imageUrl}
+              >
+                {data.mdx.frontmatter.photographer}
+              </a>
+            </span>
+          </div>
+        )}
         <div className="blog-body">{children}</div>
       </StyledBlog>
       <Footer setShowCredits={setShowCredits} />
@@ -48,6 +72,9 @@ export const query = graphql`
             gatsbyImageData(width: 1000)
           }
         }
+        imageUrl
+        photographer
+        wordCount
       }
     }
   }
