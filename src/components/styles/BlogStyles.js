@@ -144,7 +144,7 @@ export const StyledBlog = styled.div`
         color: orange;
         font-family: "Open Sans", sans-serif;
         max-width: 100%;
-        text-wrap: wrap;
+        word-wrap: break-word;
       }
     }
   }
