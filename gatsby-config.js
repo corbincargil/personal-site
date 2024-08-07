@@ -3,7 +3,7 @@ module.exports = {
     title: `Corbin Cargil`,
     description: `A site to showcase my projects and skills as a developer`,
     image: `/meta-image.png`,
-    siteUrl: `https://www.corbincargil.com`,
+    siteUrl: `https://corbincargil.com`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -41,6 +41,15 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-K3TF0G7HGL", // Google Analytics / GA
+        ],
       },
     },
   ],
