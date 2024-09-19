@@ -1,5 +1,5 @@
 const sgMail = require("@sendgrid/mail");
-const { getStore } = require("@netlify/functions");
+const { getStore } = require("@netlify/blobs");
 
 exports.handler = async function (event, context) {
   const store = getStore("site-visits");
