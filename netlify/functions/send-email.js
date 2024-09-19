@@ -16,6 +16,8 @@ exports.handler = async function (event, context) {
 
   await store.set("lastVisitTime", now);
 
+  const userData = JSON.parse(event.body);
+
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -26,9 +28,14 @@ exports.handler = async function (event, context) {
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: "your-email@example.com",
+    to: process.env.EMAIL_USER,
     subject: "New Site Visit",
-    text: "Someone visited your site!",
+    text: `Someone visited your site!
+            User Agent: ${userData.userAgent}
+            Language: ${userData.language}
+            Screen Size: ${userData.screenSize}
+            Time Zone: ${userData.timeZone}
+            Referrer: ${userData.referrer}`,
   };
 
   try {

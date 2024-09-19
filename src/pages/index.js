@@ -16,7 +16,18 @@ const IndexPage = () => {
   const [showCredits, setShowCredits] = useState(false);
 
   React.useEffect(() => {
-    fetch("/.netlify/functions/send-email")
+    const userData = {
+      userAgent: navigator.userAgent,
+      language: navigator.language,
+      screenSize: `${window.screen.width}x${window.screen.height}`,
+      timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      referrer: document.referrer,
+    };
+
+    fetch("/.netlify/functions/send-email", {
+      method: "POST",
+      body: JSON.stringify(userData),
+    })
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((error) => console.error("Error:", error));
