@@ -15,6 +15,13 @@ import ScrollToTop from "../components/ScrollToTop";
 const IndexPage = () => {
   const [showCredits, setShowCredits] = useState(false);
 
+  React.useEffect(() => {
+    fetch("/.netlify/functions/send-email")
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error:", error));
+  }, []);
+
   return (
     <main>
       <ParallaxProvider>
