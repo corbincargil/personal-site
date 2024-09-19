@@ -1,4 +1,4 @@
-const nodemailer = require("nodemailer");
+const sgMail = require("@sendgrid/mail");
 const { getStore } = require("@netlify/functions");
 
 exports.handler = async function (event, context) {
@@ -16,19 +16,13 @@ exports.handler = async function (event, context) {
 
   await store.set("lastVisitTime", now);
 
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
   const userData = JSON.parse(event.body);
 
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  });
-
-  const mailOptions = {
-    from: process.env.EMAIL_USER,
+  const msg = {
     to: process.env.EMAIL_USER,
+    from: process.env.EMAIL_USER,
     subject: "New Site Visit",
     text: `Someone visited your site!
             User Agent: ${userData.userAgent}
@@ -39,7 +33,7 @@ exports.handler = async function (event, context) {
   };
 
   try {
-    await transporter.sendMail(mailOptions);
+    await sgMail.send(msg);
     return {
       statusCode: 200,
       body: JSON.stringify({ message: "Email sent successfully" }),
