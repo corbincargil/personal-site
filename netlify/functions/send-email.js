@@ -3,18 +3,11 @@ const sgMail = require("@sendgrid/mail");
 const { getStore } = require("@netlify/blobs");
 
 exports.handler = async function (event, context) {
-  let store;
-  if (process.env.NETLIFY) {
-    // Running on Netlify
-    store = getStore("site-visits");
-  } else {
-    // Running locally
-    store = getStore({
-      name: "site-visits",
-      siteID: process.env.SITE_ID,
-      token: process.env.NETLIFY_AUTH_TOKEN,
-    });
-  }
+  const store = getStore({
+    name: "site-visits",
+    siteID: process.env.SITE_ID,
+    token: process.env.NETLIFY_AUTH_TOKEN,
+  });
 
   const now = Date.now();
   const lastVisitTime = await store.get("lastVisitTime");
